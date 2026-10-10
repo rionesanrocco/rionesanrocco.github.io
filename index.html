@@ -10,10 +10,15 @@
 <meta property="og:image" content="assets/curva.jpg">
 <meta name="theme-color" content="#1D3A7A">
 <link rel="icon" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,600;0,700;1,900&family=Barlow:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap">
 <style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/anton-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/montserrat-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/montserrat-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/barlow-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'UnifrakturCook';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/unifrakturcook-latin-700-normal.woff2) format('woff2')}
 body{margin:0}
 a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-root{display:flex;align-items:stretch;min-height:100vh}
@@ -29,6 +34,14 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-tab:hover{background:rgba(255,255,255,.08)}
 .sr-tab[aria-current="page"]{background:rgba(255,255,255,.12);color:#F5B50A;font-weight:700}
 .sr-follow{order:3;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;box-sizing:border-box;padding:10px 16px;background:#F5B50A;color:#0B1F4B;font-weight:700;font-size:16px;text-decoration:none;border-radius:4px}
+.sr-legal{order:4;align-self:flex-start;min-height:44px;padding:0 4px;border:0;background:transparent;color:rgba(255,255,255,.85);cursor:pointer;font-family:inherit;font-size:15px;text-decoration:underline;text-underline-offset:3px}
+.sr-legal:hover{color:#fff}
+.sr-foot-link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px;color:#1D3A7A}
+.sr-doc h2{margin:18px 0 0;font-family:'Anton','Impact',sans-serif;font-weight:400;font-size:26px;line-height:1.15;text-transform:uppercase}
+.sr-doc p,.sr-doc ul{margin:0;font-size:18px;color:#2B3757}
+.sr-doc ul{padding-left:22px}
+.sr-doc li{margin:4px 0}
+.sr-doc a{font-weight:600;overflow-wrap:anywhere}
 .sr-main{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
 .sr-top,.sr-close,.sr-shade{display:none}
 @media (max-width:899px){
@@ -51,7 +64,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-main{flex:1 1 auto}
 }
 @media (prefers-reduced-motion:reduce){.sr-side,.sr-open .sr-side,.sr-shade{transition:none}}
-.sr-burger:focus-visible,.sr-close:focus-visible,.sr-tab:focus-visible,.sr-brand:focus-visible{outline:3px solid #F5B50A;outline-offset:2px}
+.sr-legal:focus-visible,.sr-burger:focus-visible,.sr-close:focus-visible,.sr-tab:focus-visible,.sr-brand:focus-visible{outline:3px solid #F5B50A;outline-offset:2px}
 [hidden]{display:none!important}img{max-width:100%}</style>
 </head>
 <body>
@@ -94,6 +107,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <button type="button" class="sr-tab" data-go="rione">Il rione</button>
 <button type="button" class="sr-tab" data-go="sponsor">Sponsor</button>
 </nav>
+<button type="button" class="sr-legal" data-go="privacy">Privacy e cookie</button>
 </div>
 </aside>
 
@@ -431,10 +445,63 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 </section>
 </div>
 
+<div data-page="privacy" hidden>
+<section class="sr-doc" style="background: #FFFFFF; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Informativa · Note legali</div>
+<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(40px, 5.5vw, 72px); line-height: 1; text-transform: uppercase">Privacy e cookie</h1>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+
+<div style="margin-top: 10px; background: #F1F4FA; border-left: 5px solid #F5B50A; border-radius: 4px; padding: 18px 20px">
+<p style="font-weight: 600; color: #14264F">In breve: questo sito non usa cookie, non fa statistiche sui visitatori, non ha moduli da compilare e non ti chiede nome, email o altri dati. Per questo non compare nessun avviso sui cookie.</p>
+</div>
+
+<h2>Chi gestisce il sito</h2>
+<p>Il sito rionesanrocco.github.io è gestito dal Rione San Rocco di Frascati (RM), che è il titolare del trattamento dei dati descritti in questa pagina.</p>
+<p>Per qualsiasi richiesta puoi scriverci in privato su Instagram: <a href="https://www.instagram.com/rionesanrocco/">@rionesanrocco</a>.</p>
+
+<h2>Quali dati vengono trattati</h2>
+<p>Noi non raccogliamo dati su chi visita il sito. L'unico trattamento è tecnico e lo fa il servizio che ospita le pagine:</p>
+<ul>
+<li>il sito è ospitato su GitHub Pages, un servizio di GitHub, Inc. (Stati Uniti);</li>
+<li>come ogni server web, a ogni visita GitHub riceve l'indirizzo IP del visitatore e lo registra per ragioni di sicurezza e per far funzionare il servizio;</li>
+<li>noi non abbiamo accesso a questi registri e non li usiamo per riconoscere le persone.</li>
+</ul>
+<p>La base giuridica è il legittimo interesse a rendere il sito raggiungibile e sicuro (art. 6, par. 1, lett. f del Regolamento UE 2016/679). I dati possono essere trasferiti negli Stati Uniti: GitHub dichiara di aderire al Data Privacy Framework UE-USA e di usare le clausole contrattuali standard della Commissione europea. Tempi di conservazione e dettagli sono nell'<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa privacy di GitHub</a>.</p>
+
+<h2>Cookie</h2>
+<p>Il sito non installa cookie, né propri né di altri, e non usa altri strumenti di tracciamento: niente statistiche, niente pubblicità, niente pulsanti social incorporati. Anche i caratteri tipografici sono caricati dal sito stesso, senza collegamenti a servizi esterni.</p>
+<p>Se in futuro aggiungeremo funzioni che usano cookie, aggiorneremo questa pagina e, dove la legge lo prevede, chiederemo prima il tuo consenso.</p>
+
+<h2>Collegamenti ad altri siti</h2>
+<p>Nel sito ci sono collegamenti a Instagram (il nostro profilo e quelli degli sponsor) e a Google Maps (il campo di gioco). Sono semplici link: finché non li tocchi nessun dato viene inviato a questi servizi. Quando li apri passi su siti di altri, che trattano i dati secondo le loro regole.</p>
+
+<h2>Nomi e foto</h2>
+<p>Sul sito compaiono i nomi dei giocatori della squadra e alcune foto della squadra e dei tifosi, pubblicati per raccontare l'attività sportiva del rione.</p>
+<p>Se sei in una foto o nell'elenco e vuoi essere tolto, scrivici su Instagram: provvediamo senza chiederti il motivo.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Puoi chiederci in ogni momento di sapere quali dati che ti riguardano trattiamo, di correggerli, cancellarli o limitarne l'uso, e puoi opporti al trattamento (artt. 15-22 del Regolamento UE 2016/679). Se ritieni che i tuoi dati siano trattati in modo scorretto puoi presentare reclamo al <a href="https://www.garanteprivacy.it/" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+
+<h2>Note legali</h2>
+<ul>
+<li>Testi e grafiche del sito sono del Rione San Rocco. Per riutilizzarli chiedi prima a noi.</li>
+<li>Le foto della curva sono di Emanuele Monopoli.</li>
+<li>Nomi e loghi degli sponsor appartengono ai rispettivi titolari e sono pubblicati in quanto sponsor della squadra.</li>
+<li>Risultati, date e orari delle partite sono pubblicati a scopo informativo: in caso di differenze valgono le comunicazioni degli organizzatori del torneo.</li>
+</ul>
+
+<p style="margin-top: 14px; font-size: 16px; color: #45506B">Ultimo aggiornamento: 10 ottobre 2026</p>
+</div>
+</section>
+</div>
+
 <footer style="margin-top: auto; background: #E9EDF5; border-top: 1px solid #DCE1EC; color: #1D3A7A; padding: 28px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 40px">
 <div style="display: flex; flex-direction: column; gap: 2px">
 <div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 26px; line-height: 1.15; text-transform: uppercase">Non perderti una partita</div>
 <div style="font-size: 15px">Rione San Rocco · Frascati · S.P.Q.T. · Foto della curva: Emanuele Monopoli</div>
+<a class="sr-foot-link" href="#privacy" data-go="privacy">Privacy e cookie</a>
 </div>
 <a href="https://www.instagram.com/rionesanrocco/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; box-sizing: border-box; padding: 12px 24px; background: #1D3A7A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none; border-radius: 4px">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
@@ -447,7 +514,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 
 <script>
 (function(){
-var pages=["home","rosa","partite","rione","sponsor"];
+var pages=["home","rosa","partite","rione","sponsor","privacy"];
 function show(id,scroll){
 if(pages.indexOf(id)<0)id="home";
 document.querySelectorAll("[data-page]").forEach(function(p){p.hidden=p.getAttribute("data-page")!==id;});
@@ -469,6 +536,7 @@ window.addEventListener("resize",function(){if(window.innerWidth>=900&&root.clas
 document.addEventListener("click",function(e){
 var b=e.target.closest("[data-go]");if(!b)return;
 menu(false,false);
+if(b.tagName==="A")e.preventDefault();
 var id=b.getAttribute("data-go");
 if(location.hash.slice(1)!==id)history.pushState(null,"",id==="home"?location.pathname:"#"+id);
 show(id,true);
