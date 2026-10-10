@@ -30,34 +30,50 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-tab[aria-current="page"]{background:rgba(255,255,255,.12);color:#F5B50A;font-weight:700}
 .sr-follow{order:3;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;box-sizing:border-box;padding:10px 16px;background:#F5B50A;color:#0B1F4B;font-weight:700;font-size:16px;text-decoration:none;border-radius:4px}
 .sr-main{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+.sr-top,.sr-close,.sr-shade{display:none}
 @media (max-width:899px){
 .sr-root{flex-direction:column}
-.sr-side{flex:0 0 auto;border-right:0;position:sticky;top:0;z-index:20;box-shadow:0 4px 18px rgba(11,31,75,.22)}
-.sr-side-in{position:static;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:10px 16px}
-.sr-brand{order:1;min-height:48px;gap:10px;margin-right:auto}
-.sr-brand img{width:46px;height:46px;box-shadow:0 0 0 2px rgba(255,255,255,.85)}
-.sr-brand-name{font-size:24px}
-.sr-season{margin-top:3px;font-size:12px}
-.sr-nav{order:2;flex-direction:row;gap:2px;padding:4px;border-top:0;border-radius:999px;background:rgba(255,255,255,.12);margin-right:auto}
-.sr-tab{flex:0 0 auto;min-height:44px;padding:0 16px;border-radius:999px;font-size:15px;white-space:nowrap}
-.sr-tab:hover{background:rgba(255,255,255,.10)}
+.sr-top{display:flex;align-items:center;gap:6px;position:sticky;top:0;z-index:20;box-sizing:border-box;padding:6px 12px 6px 6px;background:linear-gradient(90deg,rgb(52,78,134) 0%,#1D3A7A 55%,rgb(18,36,76) 100%);box-shadow:0 4px 18px rgba(11,31,75,.22)}
+.sr-burger{display:inline-flex;align-items:center;gap:10px;min-height:48px;box-sizing:border-box;padding:0 14px 0 12px;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer;font-family:'Montserrat','Barlow',sans-serif;font-weight:700;font-size:15px}
+.sr-burger:hover,.sr-close:hover{background:rgba(255,255,255,.10)}
+.sr-top .sr-brand{margin-left:auto;min-height:48px;gap:10px}
+.sr-top .sr-brand img{width:42px;height:42px;box-shadow:0 0 0 2px rgba(255,255,255,.85)}
+.sr-top .sr-brand-name{font-size:24px}
+.sr-side{position:fixed;top:0;left:0;bottom:0;z-index:40;width:min(84vw,320px);flex:none;border-right:0;overflow-y:auto;box-shadow:8px 0 32px rgba(8,18,44,.45);transform:translateX(-100%);visibility:hidden;transition:transform .26s ease,visibility 0s .26s}
+.sr-open .sr-side{transform:none;visibility:visible;transition:transform .26s ease}
+.sr-side-in{position:static;padding:16px 16px 28px;gap:20px}
+.sr-side .sr-brand{padding-right:52px}
+.sr-tab{min-height:54px;font-size:18px}
 .sr-tab[aria-current="page"],.sr-tab[aria-current="page"]:hover{background:#F5B50A;color:#0B1F4B}
-.sr-follow{order:3;min-height:44px;padding:0 18px;border-radius:999px;font-size:15px}
+.sr-close{display:inline-flex;align-items:center;justify-content:center;position:absolute;top:14px;right:10px;width:48px;height:48px;padding:0;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer}
+.sr-shade{display:block;position:fixed;top:0;left:0;right:0;bottom:0;z-index:30;background:rgba(8,18,44,.6);opacity:0;pointer-events:none;transition:opacity .26s ease}
+.sr-open .sr-shade{opacity:1;pointer-events:auto}
 .sr-main{flex:1 1 auto}
 }
-@media (max-width:859px){
-.sr-side-in{padding:8px 12px 10px}
-.sr-follow{order:2}
-.sr-nav{order:3;flex:1 1 100%;margin-right:0;justify-content:space-between;overflow-x:auto}
-.sr-tab{flex:1 1 auto;padding:0 8px;font-size:14px;text-align:center}
-}
+@media (prefers-reduced-motion:reduce){.sr-side,.sr-open .sr-side,.sr-shade{transition:none}}
+.sr-burger:focus-visible,.sr-close:focus-visible,.sr-tab:focus-visible,.sr-brand:focus-visible{outline:3px solid #F5B50A;outline-offset:2px}
 [hidden]{display:none!important}img{max-width:100%}</style>
 </head>
 <body>
 <div class="sr-root" style="font-family: 'Barlow', 'Helvetica Neue', sans-serif; color: #14264F; background: #F6F7FA; font-size: 18px; line-height: 1.55">
 
-<aside class="sr-side" style="background: linear-gradient(180deg, rgb(65,90,143) 0%, #1D3A7A 45%, rgb(18,36,76) 100%)">
+<header class="sr-top">
+<button type="button" class="sr-burger" aria-expanded="false" aria-controls="sr-menu">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+<span>Menu</span>
+</button>
+<button type="button" class="sr-brand" data-go="home" aria-label="Rione San Rocco, vai alla home">
+<span class="sr-brand-name">San Rocco</span>
+<img src="assets/logo.png" alt="">
+</button>
+</header>
+<div class="sr-shade"></div>
+
+<aside class="sr-side" id="sr-menu" style="background: linear-gradient(180deg, rgb(65,90,143) 0%, #1D3A7A 45%, rgb(18,36,76) 100%)">
 <div class="sr-side-in">
+<button type="button" class="sr-close" aria-label="Chiudi il menu">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+</button>
 <div class="sr-brand-row">
 <button type="button" class="sr-brand" data-go="home" aria-label="Rione San Rocco, vai alla home">
 <img src="assets/logo.png" alt="">
@@ -438,8 +454,21 @@ document.querySelectorAll("[data-page]").forEach(function(p){p.hidden=p.getAttri
 document.querySelectorAll(".sr-tab").forEach(function(t){t.setAttribute("aria-current",t.getAttribute("data-go")===id?"page":"false");});
 if(scroll)window.scrollTo(0,0);
 }
+var root=document.querySelector(".sr-root"),burger=document.querySelector(".sr-burger"),closer=document.querySelector(".sr-close");
+function menu(open,focus){
+root.classList.toggle("sr-open",open);
+burger.setAttribute("aria-expanded",open?"true":"false");
+document.body.style.overflow=open?"hidden":"";
+if(focus)(open?closer:burger).focus();
+}
+burger.addEventListener("click",function(){menu(true,true);});
+closer.addEventListener("click",function(){menu(false,true);});
+document.querySelector(".sr-shade").addEventListener("click",function(){menu(false,false);});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&root.classList.contains("sr-open"))menu(false,true);});
+window.addEventListener("resize",function(){if(window.innerWidth>=900&&root.classList.contains("sr-open"))menu(false,false);});
 document.addEventListener("click",function(e){
 var b=e.target.closest("[data-go]");if(!b)return;
+menu(false,false);
 var id=b.getAttribute("data-go");
 if(location.hash.slice(1)!==id)history.pushState(null,"",id==="home"?location.pathname:"#"+id);
 show(id,true);
