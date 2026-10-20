@@ -42,10 +42,12 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-doc ul{padding-left:22px}
 .sr-doc li{margin:4px 0}
 .sr-doc a{font-weight:600;overflow-wrap:anywhere}
+.sr-wait{min-height:100vh;box-sizing:border-box}
 .sr-main{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
 .sr-top,.sr-close,.sr-shade{display:none}
 @media (max-width:899px){
 .sr-root{flex-direction:column}
+.sr-wait{min-height:calc(100vh - 60px);min-height:calc(100svh - 60px)}
 .sr-top{display:flex;align-items:center;gap:6px;position:sticky;top:0;z-index:20;box-sizing:border-box;padding:6px 12px 6px 6px;background:linear-gradient(90deg,rgb(52,78,134) 0%,#1D3A7A 55%,rgb(18,36,76) 100%);box-shadow:0 4px 18px rgba(11,31,75,.22)}
 .sr-burger{display:inline-flex;align-items:center;gap:10px;min-height:48px;box-sizing:border-box;padding:0 14px 0 12px;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer;font-family:'Montserrat','Barlow',sans-serif;font-weight:700;font-size:15px}
 .sr-burger:hover,.sr-close:hover{background:rgba(255,255,255,.10)}
@@ -135,8 +137,8 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <section style="background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 50%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-bottom: 3px solid #F5B50A; padding: 36px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 6px">
 <div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #F5B50A">Prossima partita · Frascati Cup a 8</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; text-transform: uppercase; color: #FFFFFF">Piazza San Rocco <span style="color: #F5B50A">vs</span> [AVVERSARIO]</h2>
-<div style="font-size: 19px; color: #FFFFFF">[DATA] · [ORA] · Club Le Palme</div>
+<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; text-transform: uppercase; color: #FFFFFF">In attesa del <span style="color: #F5B50A">calendario</span></h2>
+<div style="font-size: 19px; color: #FFFFFF">Date e avversari della Frascati Cup in arrivo</div>
 </div>
 <button type="button" data-go="partite" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 12px 24px; border: 0; background: #FFFFFF; color: #1D3A7A; font-family: inherit; font-weight: 700; font-size: 17px; border-radius: 4px; cursor: pointer">Tutte le partite</button>
 </section>
@@ -295,77 +297,20 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 </div>
 
 <div data-page="partite" hidden>
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+<section class="sr-wait" style="background: #F6F7FA; padding: 56px clamp(20px, 5vw, 64px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 22px">
+<div style="width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(180deg, rgb(65,90,143) 0%, #1D3A7A 55%, rgb(18,36,76) 100%); box-shadow: 0 0 0 4px #F5B50A; display: flex; align-items: center; justify-content: center; color: #F5B50A">
+<svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2"></rect><path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path><path d="M12 13v2.6l1.8 1.1"></path></svg>
+</div>
 <div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Frascati Cup · torneo invernale · calciotto a 8</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Partite</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3757">D'inverno si gioca a calciotto: otto contro otto, campo più stretto, ritmo più alto. In campo scendiamo come Piazza San Rocco.</p>
-</div>
-
-<div style="color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 50%, rgb(65,90,143) 100%); border-radius: 6px; border-top: 3px solid #F5B50A; padding: 28px clamp(18px, 3vw, 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px">
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #F5B50A">Prossima partita · Frascati Cup a 8</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(28px, 4vw, 44px); line-height: 1.08; text-transform: uppercase">Piazza San Rocco <span style="color: #F5B50A">vs</span> [AVVERSARIO]</h2>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px 36px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9D3EA">Giorno</div>
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 28px; line-height: 1.2">[DATA]</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9D3EA">Fischio d'inizio</div>
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 28px; line-height: 1.2">[ORA]</div>
-</div>
-</div>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 32px; line-height: 1.1; text-transform: uppercase">Calendario e risultati · Frascati Cup</h2>
-<div style="overflow-x: auto; border: 1px solid #DCE1EC; border-radius: 6px; background: #FFFFFF">
-<table style="width: 100%; min-width: 460px; border-collapse: collapse; font-size: 17px">
-<thead>
-<tr style="background: #E9EDF5; text-align: left">
-<th scope="col" style="padding: 14px 18px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #45506B; font-weight: 600">Giornata</th>
-<th scope="col" style="padding: 14px 18px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #45506B; font-weight: 600">Data e ora</th>
-<th scope="col" style="padding: 14px 18px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #45506B; font-weight: 600">Avversario</th>
-<th scope="col" style="padding: 14px 18px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #45506B; font-weight: 600">Risultato</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border-top: 1px solid #DCE1EC">
-<td style="padding: 16px 18px; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px; color: #1D3A7A">1</td>
-<td style="padding: 16px 18px">[DATA · ORA]</td>
-<td style="padding: 16px 18px; font-weight: 600">[AVVERSARIO]</td>
-<td style="padding: 16px 18px; color: #45506B">–</td>
-</tr>
-<tr style="border-top: 1px solid #DCE1EC">
-<td style="padding: 16px 18px; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px; color: #1D3A7A">2</td>
-<td style="padding: 16px 18px">[DATA · ORA]</td>
-<td style="padding: 16px 18px; font-weight: 600">[AVVERSARIO]</td>
-<td style="padding: 16px 18px; color: #45506B">–</td>
-</tr>
-<tr style="border-top: 1px solid #DCE1EC">
-<td style="padding: 16px 18px; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px; color: #1D3A7A">3</td>
-<td style="padding: 16px 18px">[DATA · ORA]</td>
-<td style="padding: 16px 18px; font-weight: 600">[AVVERSARIO]</td>
-<td style="padding: 16px 18px; color: #45506B">–</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p style="margin: 0; font-size: 16px; color: #45506B">Il calendario ufficiale esce a breve. Date, orari e risultati li trovi aggiornati qui e nelle storie di @rionesanrocco.</p>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 24px 26px; display: flex; flex-direction: column; gap: 4px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 28px; line-height: 1.15; text-transform: uppercase">Dove giochiamo d'inverno</div>
-<div style="font-weight: 700; font-size: 19px">Club Le Palme</div>
-<div style="font-size: 17px; color: #2B3757">Via Casilina 1940/C, 00132 Roma</div>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Club+Le+Palme+Via+Casilina+1940+Roma" style="font-weight: 700; font-size: 17px; padding: 12px 0 2px; display: inline-block">Apri su Google Maps</a>
-</div>
-</div>
+<h1 style="margin: 0; max-width: 900px; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(48px, 8vw, 104px); line-height: 0.98; text-transform: uppercase; color: #14264F">In attesa del <span style="color: #1D3A7A; background: linear-gradient(transparent 62%, #F5B50A 62%, #F5B50A 90%, transparent 90%)">calendario</span></h1>
+<p style="margin: 0; max-width: 560px; font-size: 19px; color: #2B3757">Appena la Frascati Cup pubblica date, orari e avversari, li trovi qui e nelle storie di @rionesanrocco.</p>
+<a href="https://www.instagram.com/rionesanrocco/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; box-sizing: border-box; margin-top: 6px; padding: 14px 26px; background: #1D3A7A; color: #FFFFFF; font-weight: 700; font-size: 18px; text-decoration: none; border-radius: 4px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
+<span>Segui @rionesanrocco</span>
+</a>
 </section>
 </div>
+
 
 <div data-page="rione" hidden>
 <section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 40px">
