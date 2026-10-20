@@ -43,6 +43,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 .sr-doc li{margin:4px 0}
 .sr-doc a{font-weight:600;overflow-wrap:anywhere}
 .sr-wait{min-height:100vh;box-sizing:border-box}
+.sr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:10px}
 .sr-main{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
 .sr-top,.sr-close,.sr-shade{display:none}
 @media (max-width:899px){
@@ -193,108 +194,187 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <div data-page="rosa" hidden>
 <section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Frascati Cup · calciotto a 8</div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Frascati Cup · stagione 2026/27 · calciotto a 8</div>
 <h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">La rosa</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3757">La rosa di Piazza San Rocco per la Frascati Cup, il torneo invernale di calciotto, da ottobre a marzo. Nomi e numeri ufficiali in arrivo.</p>
+<p style="margin: 0; font-size: 19px; color: #2B3757">I venti giocatori e lo staff di Piazza San Rocco per la Frascati Cup, il torneo invernale di calciotto, da ottobre a marzo.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Portieri</h2>
+<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Staff tecnico</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<div style="flex: 1 1 260px; display: flex; align-items: center; gap: 16px; color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 55%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-radius: 6px; padding: 18px 20px">
+<div aria-hidden="true" style="flex: 0 0 52px; height: 52px; border-radius: 50%; border: 2px solid #F5B50A; display: flex; align-items: center; justify-content: center; color: #F5B50A">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V2.8h6V4M8.5 10h7M8.5 14h7M8.5 18h4"></path></svg>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F5B50A">Allenatore</span>
+<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 32px; line-height: 1.05; text-transform: uppercase">Massimetto</span>
 </div>
 </div>
+<div style="flex: 1 1 260px; display: flex; align-items: center; gap: 16px; color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 55%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-radius: 6px; padding: 18px 20px">
+<div aria-hidden="true" style="flex: 0 0 52px; height: 52px; border-radius: 50%; border: 2px solid #F5B50A; display: flex; align-items: center; justify-content: center; color: #F5B50A">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V2.8h6V4M8.5 10h7M8.5 14h7M8.5 18h4"></path></svg>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Difensori</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F5B50A">Vice allenatore</span>
+<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 32px; line-height: 1.05; text-transform: uppercase">Mirketto</span>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
 </div>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Centrocampisti</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Portiere</h2>
+<div class="sr-grid">
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 1" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">1</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Mattia</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Paolizzi</span>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
-</div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
 </div>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Attaccanti</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Giocatori</h2>
+<div class="sr-grid">
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 4" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">4</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Francesco</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Massacci</span>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 5" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">5</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Christian</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Muzi</span>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
 </div>
-<div style="flex: 1 1 210px; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div style="flex: 0 0 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 22px">–</div>
-<div style="font-weight: 700; font-size: 17px">[NOME COGNOME]</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 6" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">6</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Gianluca</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Basili</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 7" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">7</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Donato</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Stoppiello</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 8" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">8</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Mattia</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Guerrini</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 9" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">9</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Manuel</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Muzi</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 10" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">10</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Francesco</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Duffizi</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 11" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">11</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Antonello</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Cimino</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 12" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">12</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Livio</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Landi</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #F5B50A; box-shadow: 0 0 0 1px #F5B50A; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 14" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">14</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Gianluca</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Pietropaoli</span>
+</div>
+<div title="Capitano" style="flex: 0 0 auto; margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #45506B"><span aria-hidden="true" style="width: 26px; height: 26px; border-radius: 50%; background: #F5B50A; color: #0B1F4B; display: inline-flex; align-items: center; justify-content: center; font-family: 'Anton', 'Impact', sans-serif; font-size: 15px">C</span>Capitano</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 16" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">16</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Stefano</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">De Sanctis</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 18" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">18</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Federico</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Ronga</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 20" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">20</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Roberto</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Di Mario</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 21" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">21</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Franco</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Paolella</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 22" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">22</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Luca</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Palmerio</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 23" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">23</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Lorenzo</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Del Monte</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 25" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">25</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Simone</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Paradisi</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 27" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">27</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Valerio</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">Pronkina</span>
+</div>
+</div>
+<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
+<div aria-label="Numero 30" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">30</div>
+<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Luca</span>
+<span style="font-weight: 700; font-size: 19px; color: #14264F">De Paolis</span>
+</div>
 </div>
 </div>
 </div>
 </section>
 </div>
+
 
 <div data-page="partite" hidden>
 <section class="sr-wait" style="background: #F6F7FA; padding: 56px clamp(20px, 5vw, 64px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 22px">
