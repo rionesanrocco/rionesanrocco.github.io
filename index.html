@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Rione San Rocco – Frascati</title>
 <meta name="description" content="Il rione gialloblù di Frascati: rosa, partite della Frascati Cup, storia e sponsor del Rione San Rocco.">
@@ -14,95 +14,13 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#1D3A7A">
 <link rel="icon" href="assets/logo.png">
-<style>
-@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/anton-latin-400-normal.woff2) format('woff2')}
-@font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/montserrat-latin-600-normal.woff2) format('woff2')}
-@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/montserrat-latin-700-normal.woff2) format('woff2')}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/barlow-latin-400-normal.woff2) format('woff2')}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-latin-500-normal.woff2) format('woff2')}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-latin-600-normal.woff2) format('woff2')}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-latin-700-normal.woff2) format('woff2')}
-@font-face{font-family:'UnifrakturCook';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/unifrakturcook-latin-700-normal.woff2) format('woff2')}
-body{margin:0}
-a{color:#0B1F4B}a:hover{color:#1B3C8A}
-.sr-root{display:flex;align-items:stretch;min-height:100vh}
-.sr-side{flex:0 0 248px;box-sizing:border-box;border-right:1px solid rgba(255,255,255,.14)}
-.sr-side-in{position:sticky;top:0;box-sizing:border-box;display:flex;flex-direction:column;gap:22px;padding:24px 18px}
-.sr-brand-row{display:contents}
-.sr-brand{display:flex;align-items:center;gap:12px;min-height:56px;padding:0;border:0;background:transparent;cursor:pointer;text-align:left;font-family:inherit}
-.sr-brand img{width:56px;height:56px;border-radius:50%;display:block}
-.sr-brand-name{display:block;font-family:'UnifrakturCook',serif;font-size:27px;line-height:1;color:#fff}
-.sr-season{display:block;margin-top:6px;font-size:13px;font-weight:600;letter-spacing:.03em;line-height:1.2;color:#F5B50A}
-.sr-nav{order:2;display:flex;flex-direction:column;gap:2px;border-top:1px solid rgba(255,255,255,.16);padding-top:16px}
-.sr-tab{min-height:48px;box-sizing:border-box;padding:10px 14px;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer;text-align:left;font-family:'Montserrat','Barlow',sans-serif;font-weight:600;font-size:16px}
-.sr-tab:hover{background:rgba(255,255,255,.08)}
-.sr-tab[aria-current="page"]{background:rgba(255,255,255,.12);color:#F5B50A;font-weight:700}
-.sr-follow{order:3;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;box-sizing:border-box;padding:10px 16px;background:#F5B50A;color:#0B1F4B;font-weight:700;font-size:16px;text-decoration:none;border-radius:4px}
-.sr-legal{order:4;align-self:flex-start;min-height:44px;padding:0 4px;border:0;background:transparent;color:rgba(255,255,255,.85);cursor:pointer;font-family:inherit;font-size:15px;text-decoration:underline;text-underline-offset:3px}
-.sr-legal:hover{color:#fff}
-.sr-foot-link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px;color:#1D3A7A}
-.sr-doc h2{margin:18px 0 0;font-family:'Anton','Impact',sans-serif;font-weight:400;font-size:26px;line-height:1.15;text-transform:uppercase}
-.sr-doc p,.sr-doc ul{margin:0;font-size:18px;color:#2B3757}
-.sr-doc ul{padding-left:22px}
-.sr-doc li{margin:4px 0}
-.sr-doc a{font-weight:600;overflow-wrap:anywhere}
-.sr-next-h .sr-vs{color:#F5B50A}
-.sr-cal{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.sr-month{margin:14px 0 2px;font-family:'Anton','Impact',sans-serif;font-size:22px;line-height:1.1;text-transform:uppercase;color:#1D3A7A;border-bottom:2px solid #F5B50A;padding-bottom:6px}
-.sr-month:first-child{margin-top:0}
-.sr-match{display:grid;grid-template-columns:76px 160px 1fr;align-items:center;gap:6px 18px;background:#FFFFFF;border:1px solid #DCE1EC;border-radius:6px;padding:12px 16px 12px 12px}
-.sr-match.sr-is-next{border-color:#F5B50A;box-shadow:0 0 0 1px #F5B50A}
-.sr-mg{display:flex;flex-direction:column;align-items:center;justify-content:center;height:58px;border-radius:4px;background:linear-gradient(160deg,rgb(65,90,143) 0%,#1D3A7A 40%,rgb(18,36,76) 100%);color:#F5B50A;line-height:1}
-.sr-mg span{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C9D3EA}
-.sr-mg b{font-family:'Anton','Impact',sans-serif;font-weight:400;font-size:26px;margin-top:3px}
-.sr-mwhen{font-weight:600;font-size:16px;color:#2B3757;white-space:nowrap}
-.sr-mwhen .sr-tag{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:#F5B50A;color:#0B1F4B;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;vertical-align:2px}
-.sr-mteams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;font-size:17px;font-weight:600;color:#14264F}
-.sr-th{text-align:right}
-.sr-us{font-weight:800;color:#1D3A7A}
-.sr-score{min-width:64px;text-align:center;padding:6px 10px;border-radius:999px;background:#E9EDF5;font-family:'Anton','Impact',sans-serif;font-size:18px;color:#45506B}
-@media (max-width:700px){
-.sr-match{grid-template-columns:58px 1fr;padding:12px}
-.sr-mg{height:50px;grid-row:span 2}
-.sr-mg b{font-size:22px}
-.sr-mwhen{font-size:15px}
-.sr-mteams{gap:8px;font-size:15px}
-.sr-score{min-width:52px;padding:5px 6px;font-size:16px}
-}
-.sr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:10px}
-.sr-main{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
-.sr-top,.sr-close,.sr-shade{display:none}
-@media (max-width:899px){
-.sr-root{flex-direction:column}
-.sr-top{display:flex;align-items:center;gap:6px;position:sticky;top:0;z-index:20;box-sizing:border-box;padding:6px 12px 6px 6px;background:linear-gradient(90deg,rgb(52,78,134) 0%,#1D3A7A 55%,rgb(18,36,76) 100%);box-shadow:0 4px 18px rgba(11,31,75,.22)}
-.sr-burger{display:inline-flex;align-items:center;gap:10px;min-height:48px;box-sizing:border-box;padding:0 14px 0 12px;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer;font-family:'Montserrat','Barlow',sans-serif;font-weight:700;font-size:15px}
-.sr-burger:hover,.sr-close:hover{background:rgba(255,255,255,.10)}
-.sr-top .sr-brand{margin-left:auto;min-height:48px;gap:10px}
-.sr-top .sr-brand img{width:42px;height:42px;box-shadow:0 0 0 2px rgba(255,255,255,.85)}
-.sr-top .sr-brand-name{font-size:24px}
-.sr-side{position:fixed;top:0;left:0;bottom:0;z-index:40;width:min(84vw,320px);flex:none;border-right:0;overflow-y:auto;box-shadow:8px 0 32px rgba(8,18,44,.45);transform:translateX(-100%);visibility:hidden;transition:transform .26s ease,visibility 0s .26s}
-.sr-open .sr-side{transform:none;visibility:visible;transition:transform .26s ease}
-.sr-side-in{position:static;padding:16px 16px 28px;gap:20px}
-.sr-side .sr-brand{padding-right:52px}
-.sr-tab{min-height:54px;font-size:18px}
-.sr-tab[aria-current="page"],.sr-tab[aria-current="page"]:hover{background:#F5B50A;color:#0B1F4B}
-.sr-close{display:inline-flex;align-items:center;justify-content:center;position:absolute;top:14px;right:10px;width:48px;height:48px;padding:0;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer}
-.sr-shade{display:block;position:fixed;top:0;left:0;right:0;bottom:0;z-index:30;background:rgba(8,18,44,.6);opacity:0;pointer-events:none;transition:opacity .26s ease}
-.sr-open .sr-shade{opacity:1;pointer-events:auto}
-.sr-main{flex:1 1 auto}
-}
-@media (prefers-reduced-motion:reduce){.sr-side,.sr-open .sr-side,.sr-shade{transition:none}}
-.sr-legal:focus-visible,.sr-burger:focus-visible,.sr-close:focus-visible,.sr-tab:focus-visible,.sr-brand:focus-visible{outline:3px solid #F5B50A;outline-offset:2px}
-[hidden]{display:none!important}img{max-width:100%}</style>
+<link rel="stylesheet" href="assets/site.css?v=20261030b">
 </head>
 <body>
-<div class="sr-root" style="font-family: 'Barlow', 'Helvetica Neue', sans-serif; color: #14264F; background: #F6F7FA; font-size: 18px; line-height: 1.55">
+<div class="sr-root">
 
 <header class="sr-top">
-<button type="button" class="sr-burger" aria-expanded="false" aria-controls="sr-menu">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
-<span>Menu</span>
-</button>
+<button type="button" class="sr-burger" aria-expanded="false" aria-controls="sr-menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l16 0"/><path d="M4 12l16 0"/><path d="M4 18l16 0"/></svg><span>Menu</span></button>
 <button type="button" class="sr-brand" data-go="home" aria-label="Rione San Rocco, vai alla home">
 <span class="sr-brand-name">San Rocco</span>
 <img src="assets/logo.png" alt="">
@@ -110,24 +28,16 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 </header>
 <div class="sr-shade"></div>
 
-<aside class="sr-side" id="sr-menu" style="background: linear-gradient(180deg, rgb(65,90,143) 0%, #1D3A7A 45%, rgb(18,36,76) 100%)">
+<aside class="sr-side" id="sr-menu">
 <div class="sr-side-in">
-<button type="button" class="sr-close" aria-label="Chiudi il menu">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
-</button>
-<div class="sr-brand-row">
+<button type="button" class="sr-close" aria-label="Chiudi il menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg></button>
 <button type="button" class="sr-brand" data-go="home" aria-label="Rione San Rocco, vai alla home">
 <img src="assets/logo.png" alt="">
-<span>
+<span class="sr-brand-txt">
 <span class="sr-brand-name">San Rocco</span>
 <span class="sr-season">Frascati Cup · calciotto a 8</span>
 </span>
 </button>
-<a class="sr-follow" href="https://www.instagram.com/rionesanrocco/">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
-<span>Seguici</span>
-</a>
-</div>
 <nav class="sr-nav" aria-label="Menu">
 <button type="button" class="sr-tab" data-go="home">Home</button>
 <button type="button" class="sr-tab" data-go="rosa">Rosa</button>
@@ -135,6 +45,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <button type="button" class="sr-tab" data-go="rione">Il rione</button>
 <button type="button" class="sr-tab" data-go="sponsor">Sponsor</button>
 </nav>
+<a class="btn btn--gold btn--full" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>Seguici</span></a>
 <button type="button" class="sr-legal" data-go="privacy">Privacy e cookie</button>
 </div>
 </aside>
@@ -142,292 +53,148 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <main class="sr-main">
 
 <div data-page="home" hidden>
-<section style="position: relative; background: #1D3A7A; overflow: hidden">
-<img src="assets/curva.jpg" alt="La curva del San Rocco tra i fumogeni con lo striscione Combattete per noi" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; display: block">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(16,32,67,0.80) 0%, rgba(16,32,67,0.50) 45%, rgba(16,32,67,0.92) 100%)"></div>
-<div style="position: relative; min-height: 620px; box-sizing: border-box; padding: 64px clamp(20px, 5vw, 64px) 48px; display: flex; flex-direction: column; justify-content: flex-end; gap: 20px">
-<div style="font-family: 'UnifrakturCook', serif; font-size: clamp(32px, 4.5vw, 52px); line-height: 1; color: #F5B50A">Rione San Rocco</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(52px, 9vw, 128px); line-height: 0.95; letter-spacing: 0.01em; text-transform: uppercase; color: #FFFFFF">Daje<br>San Rocco</h1>
-<p style="margin: 0; max-width: 600px; font-size: clamp(18px, 2vw, 21px); line-height: 1.5; color: #FFFFFF">Il rione gialloblù di Frascati. Campioni del primo Torneo dei Rioni, in campo tutto l'inverno nella Frascati Cup di calciotto.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px">
-<a href="https://www.instagram.com/rionesanrocco/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; box-sizing: border-box; padding: 14px 26px; background: #F5B50A; color: #1D3A7A; font-weight: 700; font-size: 18px; text-decoration: none; border-radius: 4px">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
-<span>Segui @rionesanrocco</span>
-</a>
-<button type="button" data-go="rione" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 14px 26px; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 18px; border-radius: 4px; cursor: pointer">Scopri il rione</button>
+<section class="hero">
+<img class="hero-img pos-60" src="assets/curva.jpg" alt="La curva del San Rocco tra i fumogeni con lo striscione Combattete per noi">
+<div class="hero-shade"></div>
+<div class="hero-in">
+<p class="hero-gothic">Rione San Rocco</p>
+<h1 class="hero-h">Daje<br>San Rocco</h1>
+<p class="lead lead--dark">Il rione gialloblù di Frascati. Campioni del primo Torneo dei Rioni, in campo tutto l'inverno nella Frascati Cup di calciotto.</p>
+<div class="btns">
+<a class="btn btn--gold" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>Segui @rionesanrocco</span></a>
+<button type="button" class="btn btn--ghost" data-go="rione">Scopri il rione<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></button>
 </div>
-<div style="font-size: 14px; color: #FFFFFF">Foto: Emanuele Monopoli</div>
+<p class="credit">Foto: Emanuele Monopoli</p>
 </div>
 </section>
 
-<section style="background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 50%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-bottom: 3px solid #F5B50A; padding: 36px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px">
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 6px">
-<div class="sr-next-k" style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #F5B50A">Prossima partita · Giornata 1</div>
-<h2 class="sr-next-h" style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; text-transform: uppercase; color: #FFFFFF">Piazza San Rocco <span class="sr-vs">vs</span> Piazza Garibaldi</h2>
-<div class="sr-next-line" style="font-size: 19px; color: #FFFFFF">Mercoledì 11 novembre · ore 21:00 · Club Le Palme</div>
+<div class="next next--band">
+<div class="next-main">
+<p class="kicker kicker--dark sr-next-k">Prossima partita · Giornata 1</p>
+<h2 class="next-h sr-next-h">Piazza San Rocco <span class="sr-vs">vs</span> Piazza Garibaldi</h2>
+<ul class="next-info sr-next-info">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12"/><path d="M16 3l0 4"/><path d="M8 3l0 4"/><path d="M4 11l16 0"/><path d="M8 15h2v2h-2l0 -2"/></svg><span class="sr-next-d">Mercoledì 11 novembre</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 7v5l3 3"/></svg><span class="sr-next-t">21:00</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg><span>Club Le Palme</span></li>
+</ul>
 </div>
-<button type="button" data-go="partite" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 12px 24px; border: 0; background: #FFFFFF; color: #1D3A7A; font-family: inherit; font-weight: 700; font-size: 17px; border-radius: 4px; cursor: pointer">Tutto il calendario</button>
-</section>
+<button type="button" class="btn btn--white" data-go="partite">Tutto il calendario<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></button>
+</div>
 
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Le divise · Frascati Cup</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Bianca e blu,<br>con la fascia</h2>
-<p style="margin: 0; font-size: 19px; color: #2B3757">Bianca per i giocatori di movimento, blu per i portieri: tutte e due con la fascia sul petto e lo stemma al centro. Davanti Garage, sulla schiena Gluck, sui pantaloncini Pizza San Rocco.</p>
+<section class="sec">
+<div class="head">
+<p class="kicker">Le divise · Frascati Cup</p>
+<h2 class="h1">Bianca e blu,<br>con la fascia</h2>
+<p class="lead">Bianca per i giocatori di movimento, blu per i portieri: tutte e due con la fascia sul petto e lo stemma al centro. Davanti Garage, sulla schiena Gluck, sui pantaloncini Pizza San Rocco.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px">
-<figure style="flex: 1 1 280px; max-width: 520px; margin: 0; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 6px 24px rgba(19,39,82,0.08)">
-<img src="assets/divisa_bianca.jpg" alt="Divisa bianca di Piazza San Rocco per la Frascati Cup: fascia oro e blu, pantaloncini blu, numero blu sulla schiena" style="width: 100%; height: auto; display: block">
-<figcaption style="padding: 16px 22px 20px; border-top: 3px solid #F5B50A; display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 26px; line-height: 1.15; text-transform: uppercase">Giocatori</span>
-<span style="font-size: 17px; color: #2B3757">Maglia bianca, fascia oro e blu, pantaloncini blu, calzettoni bianchi.</span>
+<div class="kits">
+<figure class="kit">
+<img src="assets/divisa_bianca.jpg" alt="Divisa bianca di Piazza San Rocco per la Frascati Cup: fascia oro e blu, pantaloncini blu, numero blu sulla schiena">
+<figcaption>
+<h3 class="h3">Giocatori</h3>
+<p>Maglia bianca, fascia oro e blu, pantaloncini blu, calzettoni bianchi.</p>
 </figcaption>
 </figure>
-<figure style="flex: 1 1 280px; max-width: 520px; margin: 0; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 6px 24px rgba(19,39,82,0.08)">
-<img src="assets/divisa_blu.jpg" alt="Divisa blu dei portieri di Piazza San Rocco per la Frascati Cup: fascia oro e bianca, pantaloncini blu, numero bianco sulla schiena" style="width: 100%; height: auto; display: block">
-<figcaption style="padding: 16px 22px 20px; border-top: 3px solid #F5B50A; display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 26px; line-height: 1.15; text-transform: uppercase">Portieri</span>
-<span style="font-size: 17px; color: #2B3757">La maglia dei portieri: blu, fascia oro e bianca, pantaloncini e calzettoni blu.</span>
+<figure class="kit">
+<img src="assets/divisa_blu.jpg" alt="Divisa blu dei portieri di Piazza San Rocco per la Frascati Cup: fascia oro e bianca, pantaloncini blu, numero bianco sulla schiena">
+<figcaption>
+<h3 class="h3">Portieri</h3>
+<p>La maglia dei portieri: blu, fascia oro e bianca, pantaloncini e calzettoni blu.</p>
 </figcaption>
 </figure>
 </div>
 </section>
 
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">La curva</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Combattete<br>per noi</h2>
-<p style="margin: 0; font-size: 19px; color: #2B3757">Striscioni dipinti a mano, bandiere, cori dal primo all'ultimo minuto. Il San Rocco è prima di tutto la sua gente: ragazzi, famiglie, chi il rione lo vive da una vita.</p>
+<section class="sec sec--white">
+<div class="head">
+<p class="kicker">La curva</p>
+<h2 class="h1">Combattete<br>per noi</h2>
+<p class="lead">Striscioni dipinti a mano, bandiere, cori dal primo all'ultimo minuto. Il San Rocco è prima di tutto la sua gente: ragazzi, famiglie, chi il rione lo vive da una vita.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<figure style="flex: 1 1 320px; margin: 0; display: flex; flex-direction: column; gap: 8px">
-<img src="assets/fumogeni.jpg" alt="I giocatori salutano la curva tra i fumogeni, con lo striscione Daje San Rocco" style="width: 100%; height: clamp(220px, 26vw, 360px); object-fit: cover; display: block; border-radius: 6px">
-<figcaption style="font-size: 15px; color: #45506B">Foto: Emanuele Monopoli</figcaption>
+<div class="gallery">
+<figure>
+<img class="ph" src="assets/fumogeni.jpg" alt="I giocatori salutano la curva tra i fumogeni, con lo striscione Daje San Rocco">
+<figcaption>Foto: Emanuele Monopoli</figcaption>
 </figure>
-<figure style="flex: 1 1 320px; margin: 0; display: flex; flex-direction: column; gap: 8px">
-<img src="assets/saluto.jpg" alt="La squadra alza le braccia verso i tifosi sugli spalti" style="width: 100%; height: clamp(220px, 26vw, 360px); object-fit: cover; object-position: center 70%; display: block; border-radius: 6px">
-<figcaption style="font-size: 15px; color: #45506B">Foto: Emanuele Monopoli</figcaption>
+<figure>
+<img class="ph pos-70" src="assets/saluto.jpg" alt="La squadra alza le braccia verso i tifosi sugli spalti">
+<figcaption>Foto: Emanuele Monopoli</figcaption>
 </figure>
-<figure style="flex: 1 1 100%; margin: 0; display: flex; flex-direction: column; gap: 8px">
-<img src="assets/spalle.jpg" alt="La squadra abbracciata, vista di spalle, prima della partita" style="width: 100%; height: clamp(220px, 30vw, 420px); object-fit: cover; object-position: center 60%; display: block; border-radius: 6px">
-<figcaption style="font-size: 15px; color: #45506B">Il gruppo, prima del fischio d'inizio.</figcaption>
+<figure class="gallery-wide">
+<img class="ph ph--wide pos-60" src="assets/spalle.jpg" alt="La squadra abbracciata, vista di spalle, prima della partita">
+<figcaption>Il gruppo, prima del fischio d'inizio.</figcaption>
 </figure>
 </div>
 </section>
 </div>
 
 <div data-page="rosa" hidden>
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Frascati Cup · stagione 2026/27 · calciotto a 8</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">La rosa</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3757">I venti giocatori e lo staff di Piazza San Rocco per la Frascati Cup, il torneo invernale di calciotto, da ottobre a marzo.</p>
+<section class="sec">
+<div class="head">
+<p class="kicker">Frascati Cup · stagione 2026/27 · calciotto a 8</p>
+<h1 class="h1">La rosa</h1>
+<p class="lead">I venti giocatori e lo staff di Piazza San Rocco per la Frascati Cup, il torneo invernale di calciotto, da ottobre a marzo.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Staff tecnico</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<div style="flex: 1 1 260px; display: flex; align-items: center; gap: 16px; color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 55%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-radius: 6px; padding: 18px 20px">
-<div aria-hidden="true" style="flex: 0 0 52px; height: 52px; border-radius: 50%; border: 2px solid #F5B50A; display: flex; align-items: center; justify-content: center; color: #F5B50A">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V2.8h6V4M8.5 10h7M8.5 14h7M8.5 18h4"></path></svg>
+<div class="group">
+<h2 class="h2">Staff tecnico</h2>
+<ul class="staff">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"/><path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2"/><path d="M9 12l.01 0"/><path d="M13 12l2 0"/><path d="M9 16l.01 0"/><path d="M13 16l2 0"/></svg><span class="staff-txt"><span class="staff-r">Allenatore</span><span class="staff-n">Massimetto</span></span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"/><path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2"/><path d="M9 12l.01 0"/><path d="M13 12l2 0"/><path d="M9 16l.01 0"/><path d="M13 16l2 0"/></svg><span class="staff-txt"><span class="staff-r">Vice allenatore</span><span class="staff-n">Mirketto</span></span></li>
+</ul>
 </div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F5B50A">Allenatore</span>
-<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 32px; line-height: 1.05; text-transform: uppercase">Massimetto</span>
+<div class="group">
+<h2 class="h2">Portiere</h2>
+<ul class="roster">
+<li class="pl"><span class="pl-n" aria-label="Numero 1">1</span><span class="pl-name"><span class="pl-f">Mattia</span><span class="pl-l">Paolizzi</span></span></li>
+</ul>
 </div>
-</div>
-<div style="flex: 1 1 260px; display: flex; align-items: center; gap: 16px; color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 55%, rgb(65,90,143) 100%); border-top: 3px solid #F5B50A; border-radius: 6px; padding: 18px 20px">
-<div aria-hidden="true" style="flex: 0 0 52px; height: 52px; border-radius: 50%; border: 2px solid #F5B50A; display: flex; align-items: center; justify-content: center; color: #F5B50A">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V2.8h6V4M8.5 10h7M8.5 14h7M8.5 18h4"></path></svg>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #F5B50A">Vice allenatore</span>
-<span style="font-family: 'Anton', 'Impact', sans-serif; font-size: 32px; line-height: 1.05; text-transform: uppercase">Mirketto</span>
-</div>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Portiere</h2>
-<div class="sr-grid">
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 1" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">1</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Mattia</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Paolizzi</span>
-</div>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; text-transform: uppercase; border-bottom: 2px solid #F5B50A; padding-bottom: 8px">Giocatori</h2>
-<div class="sr-grid">
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 4" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">4</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Francesco</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Massacci</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 5" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">5</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Christian</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Muzi</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 6" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">6</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Gianluca</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Basili</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 7" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">7</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Donato</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Stoppiello</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 8" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">8</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Mattia</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Guerrini</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 9" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">9</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Manuel</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Muzi</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 10" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">10</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Francesco</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Duffizi</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 11" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">11</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Antonello</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Cimino</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 12" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">12</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Livio</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Landi</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #F5B50A; box-shadow: 0 0 0 1px #F5B50A; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 14" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">14</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Gianluca</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Pietropaoli</span>
-</div>
-<div title="Capitano" style="flex: 0 0 auto; margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #45506B"><span aria-hidden="true" style="width: 26px; height: 26px; border-radius: 50%; background: #F5B50A; color: #0B1F4B; display: inline-flex; align-items: center; justify-content: center; font-family: 'Anton', 'Impact', sans-serif; font-size: 15px">C</span>Capitano</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 16" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">16</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Stefano</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">De Sanctis</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 18" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">18</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Federico</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Ronga</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 20" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">20</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Roberto</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Di Mario</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 21" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">21</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Franco</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Paolella</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 22" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">22</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Luca</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Palmerio</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 23" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">23</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Lorenzo</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Del Monte</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 25" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">25</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Simone</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Paradisi</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 27" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">27</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Valerio</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">Pronkina</span>
-</div>
-</div>
-<div style="min-width: 0; display: flex; align-items: center; gap: 14px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 10px 14px 10px 10px">
-<div aria-label="Numero 30" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #F5B50A; font-family: 'Anton', 'Impact', sans-serif; font-size: 25px">30</div>
-<div style="min-width: 0; display: flex; flex-direction: column; line-height: 1.2">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #45506B">Luca</span>
-<span style="font-weight: 700; font-size: 19px; color: #14264F">De Paolis</span>
-</div>
-</div>
-</div>
+<div class="group">
+<h2 class="h2">Giocatori</h2>
+<ul class="roster">
+<li class="pl"><span class="pl-n" aria-label="Numero 4">4</span><span class="pl-name"><span class="pl-f">Francesco</span><span class="pl-l">Massacci</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 5">5</span><span class="pl-name"><span class="pl-f">Christian</span><span class="pl-l">Muzi</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 6">6</span><span class="pl-name"><span class="pl-f">Gianluca</span><span class="pl-l">Basili</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 7">7</span><span class="pl-name"><span class="pl-f">Donato</span><span class="pl-l">Stoppiello</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 8">8</span><span class="pl-name"><span class="pl-f">Mattia</span><span class="pl-l">Guerrini</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 9">9</span><span class="pl-name"><span class="pl-f">Manuel</span><span class="pl-l">Muzi</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 10">10</span><span class="pl-name"><span class="pl-f">Francesco</span><span class="pl-l">Duffizi</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 11">11</span><span class="pl-name"><span class="pl-f">Antonello</span><span class="pl-l">Cimino</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 12">12</span><span class="pl-name"><span class="pl-f">Livio</span><span class="pl-l">Landi</span></span></li>
+<li class="pl pl--cap"><span class="pl-n" aria-label="Numero 14">14</span><span class="pl-name"><span class="pl-f">Gianluca</span><span class="pl-l">Pietropaoli</span></span><span class="cap"><span class="cap-c" aria-hidden="true">C</span>Capitano</span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 16">16</span><span class="pl-name"><span class="pl-f">Stefano</span><span class="pl-l">De Sanctis</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 18">18</span><span class="pl-name"><span class="pl-f">Federico</span><span class="pl-l">Ronga</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 20">20</span><span class="pl-name"><span class="pl-f">Roberto</span><span class="pl-l">Di Mario</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 21">21</span><span class="pl-name"><span class="pl-f">Franco</span><span class="pl-l">Paolella</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 22">22</span><span class="pl-name"><span class="pl-f">Luca</span><span class="pl-l">Palmerio</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 23">23</span><span class="pl-name"><span class="pl-f">Lorenzo</span><span class="pl-l">Del Monte</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 25">25</span><span class="pl-name"><span class="pl-f">Simone</span><span class="pl-l">Paradisi</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 27">27</span><span class="pl-name"><span class="pl-f">Valerio</span><span class="pl-l">Pronkina</span></span></li>
+<li class="pl"><span class="pl-n" aria-label="Numero 30">30</span><span class="pl-name"><span class="pl-f">Luca</span><span class="pl-l">De Paolis</span></span></li>
+</ul>
 </div>
 </section>
 </div>
 
-
 <div data-page="partite" hidden>
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Frascati Cup · torneo invernale · calciotto a 8</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Partite</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3757">D'inverno si gioca a calciotto: otto contro otto, campo più stretto, ritmo più alto. In campo scendiamo come Piazza San Rocco.</p>
+<section class="sec">
+<div class="head">
+<p class="kicker">Frascati Cup · torneo invernale · calciotto a 8</p>
+<h1 class="h1">Partite</h1>
+<p class="lead">D'inverno si gioca a calciotto: otto contro otto, campo più stretto, ritmo più alto. In campo scendiamo come Piazza San Rocco.</p>
 </div>
-
-<div class="sr-next" style="color: #FFFFFF; background: linear-gradient(90deg, rgb(18,36,76) 0%, #1D3A7A 50%, rgb(65,90,143) 100%); border-radius: 6px; border-top: 3px solid #F5B50A; padding: 28px clamp(18px, 3vw, 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px">
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px">
-<div class="sr-next-k" style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #F5B50A">Prossima partita · Giornata 1</div>
-<h2 class="sr-next-h" style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(28px, 4vw, 44px); line-height: 1.08; text-transform: uppercase">Piazza San Rocco <span class="sr-vs">vs</span> Piazza Garibaldi</h2>
-</div>
-<div class="sr-next-info" style="display: flex; flex-wrap: wrap; gap: 14px 36px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9D3EA">Giorno</div>
-<div class="sr-next-d" style="font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 28px; line-height: 1.2">Mercoledì 11 novembre</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9D3EA">Fischio d'inizio</div>
-<div class="sr-next-t" style="font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 28px; line-height: 1.2">21:00</div>
+<div class="next">
+<div class="next-main">
+<p class="kicker kicker--dark sr-next-k">Prossima partita · Giornata 1</p>
+<h2 class="next-h sr-next-h">Piazza San Rocco <span class="sr-vs">vs</span> Piazza Garibaldi</h2>
+<ul class="next-info sr-next-info">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12"/><path d="M16 3l0 4"/><path d="M8 3l0 4"/><path d="M4 11l16 0"/><path d="M8 15h2v2h-2l0 -2"/></svg><span class="sr-next-d">Mercoledì 11 novembre</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 7v5l3 3"/></svg><span class="sr-next-t">21:00</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg><span>Club Le Palme</span></li>
+</ul>
 </div>
 </div>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 14px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 32px; line-height: 1.1; text-transform: uppercase">Calendario · 14 giornate</h2>
+<div class="group">
+<h2 class="h2">Calendario · 14 giornate</h2>
 <ol class="sr-cal">
 <li class="sr-month">Novembre 2026</li>
 <li class="sr-match" data-when="2026-11-11T21:00:00+01:00" data-g="1" data-home="Piazza San Rocco" data-away="Piazza Garibaldi" data-day="Mercoledì 11 novembre" data-time="21:00">
@@ -505,114 +272,109 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <div class="sr-mteams"><div class="sr-th"><span>Ombrellino</span></div><div class="sr-score" aria-label="Risultato non ancora disponibile">– : –</div><div class="sr-ta"><span class="sr-us">Piazza San Rocco</span></div></div>
 </li>
 </ol>
-<p style="margin: 0; font-size: 16px; color: #45506B">Calendario ufficiale della Frascati Cup. Il risultato compare qui dopo ogni partita. In caso di cambi di data o orario valgono le comunicazioni degli organizzatori.</p>
+<p class="note">Calendario ufficiale della Frascati Cup. Il risultato compare qui dopo ogni partita. In caso di cambi di data o orario valgono le comunicazioni degli organizzatori.</p>
 </div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 24px 26px; display: flex; flex-direction: column; gap: 4px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 28px; line-height: 1.15; text-transform: uppercase">Dove giochiamo d'inverno</div>
-<div style="font-weight: 700; font-size: 19px">Club Le Palme</div>
-<div style="font-size: 17px; color: #2B3757">Via Casilina 1940/C, 00132 Roma</div>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Club+Le+Palme+Via+Casilina+1940+Roma" style="font-weight: 700; font-size: 17px; padding: 12px 0 2px; display: inline-block">Apri su Google Maps</a>
+<div class="venue">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg>
+<div class="venue-txt">
+<h2 class="h3">Dove giochiamo d'inverno</h2>
+<p><span class="strong">Club Le Palme</span><br>Via Casilina 1940/C, 00132 Roma</p>
+<a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Club+Le+Palme+Via+Casilina+1940+Roma">Apri su Google Maps<svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg></a>
 </div>
 </div>
 </section>
 </div>
 
-
 <div data-page="rione" hidden>
-<section style="background: #F6F7FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">La nostra storia</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Una piazza,<br>una squadra</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3757">Dieci rioni, uno stadio, un mese di partite all'8 Settembre. Il San Rocco c'è dalla prima edizione, con la sua gente sempre dietro la rete.</p>
+<section class="sec">
+<div class="head">
+<p class="kicker">La nostra storia</p>
+<h1 class="h1">Una piazza,<br>una squadra</h1>
+<p class="lead">Dieci rioni, uno stadio, un mese di partite all'8 Settembre. Il San Rocco c'è dalla prima edizione, con la sua gente sempre dietro la rete.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<article style="flex: 1 1 200px; background: linear-gradient(160deg, rgb(65,90,143) 0%, #1D3A7A 40%, rgb(18,36,76) 100%); color: #FFFFFF; padding: 20px; display: flex; flex-direction: column; gap: 6px; border-radius: 6px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 44px; line-height: 1; color: #F5B50A">2025</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 22px; line-height: 1.15; text-transform: uppercase">Campioni e Supercoppa</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #E4E9F5">Vinciamo il primo Torneo dei Rioni: finale il 2 luglio, 1-0. Poi arriva anche la Supercoppa, 2-0 contro la vincitrice dei rioni di Monte Porzio.</p>
-</article>
-<article style="flex: 1 1 200px; background: #E9EDF5; color: #14264F; padding: 20px; display: flex; flex-direction: column; gap: 6px; border-radius: 6px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 44px; line-height: 1; color: #1D3A7A">2026</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 22px; line-height: 1.15; text-transform: uppercase">Semifinale</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #2B3757">Dieci rioni in campo. Ci fermiamo a un passo dalla finale. Nello sport si vince e si perde.</p>
-</article>
-<article style="flex: 1 1 200px; background: #FFFFFF; border: 2px dashed #1D3A7A; color: #14264F; padding: 20px; display: flex; flex-direction: column; gap: 6px; border-radius: 6px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 44px; line-height: 1; color: #1D3A7A">2026/27</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 22px; line-height: 1.15; text-transform: uppercase">Frascati Cup · da iniziare</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #2B3757">Il torneo invernale di calciotto a 8, da ottobre a marzo. Deve ancora cominciare: la storia è tutta da scrivere.</p>
-</article>
-<article style="flex: 1 1 200px; background: #FBF0CC; color: #14264F; padding: 20px; display: flex; flex-direction: column; gap: 6px; border-radius: 6px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 44px; line-height: 1; color: #1D3A7A">2027</div>
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 22px; line-height: 1.15; text-transform: uppercase">Torniamo a divertirci</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #2B3757">In caricamento...</p>
-</article>
-</div>
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
-<img src="assets/festa.jpg" alt="La squadra festeggia sotto la curva con lo striscione San Rocco" style="width: 100%; height: clamp(240px, 38vw, 520px); object-fit: cover; object-position: center 62%; display: block; border-radius: 6px">
-<figcaption style="font-size: 15px; color: #45506B">Squadra e curva, a fine partita, allo Stadio 8 Settembre.</figcaption>
+<ol class="timeline">
+<li class="tl tl--gold">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21l8 0"/><path d="M12 17l0 4"/><path d="M7 4l10 0"/><path d="M17 4v8a5 5 0 0 1 -10 0v-8"/><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/></svg>
+<p class="tl-y">2025</p>
+<h2 class="h3">Campioni e Supercoppa</h2>
+<p>Vinciamo il primo Torneo dei Rioni: finale il 2 luglio, 1-0. Poi arriva anche la Supercoppa, 2-0 contro la vincitrice dei rioni di Monte Porzio.</p>
+</li>
+<li class="tl">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"/><path d="M5 21v-7"/></svg>
+<p class="tl-y">2026</p>
+<h2 class="h3">Semifinale</h2>
+<p>Dieci rioni in campo. Ci fermiamo a un passo dalla finale. Nello sport si vince e si perde.</p>
+</li>
+<li class="tl">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4l2 1l2 -1"/><path d="M12 2v6.5l3 1.72"/><path d="M17.928 6.268l.134 2.232l1.866 1.232"/><path d="M20.66 7l-5.629 3.25l.01 3.458"/><path d="M19.928 14.268l-1.866 1.232l-.134 2.232"/><path d="M20.66 17l-5.629 -3.25l-2.99 1.738"/><path d="M14 20l-2 -1l-2 1"/><path d="M12 22v-6.5l-3 -1.72"/><path d="M6.072 17.732l-.134 -2.232l-1.866 -1.232"/><path d="M3.34 17l5.629 -3.25l-.01 -3.458"/><path d="M4.072 9.732l1.866 -1.232l.134 -2.232"/><path d="M3.34 7l5.629 3.25l2.99 -1.738"/></svg>
+<p class="tl-y">2026/27</p>
+<h2 class="h3">Frascati Cup · da iniziare</h2>
+<p>Il torneo invernale di calciotto a 8, da ottobre a marzo. Deve ancora cominciare: la storia è tutta da scrivere.</p>
+</li>
+<li class="tl">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>
+<p class="tl-y">2027</p>
+<h2 class="h3">Torniamo a divertirci</h2>
+<p>In caricamento...</p>
+</li>
+</ol>
+<figure>
+<img class="ph ph--hero pos-62" src="assets/festa.jpg" alt="La squadra festeggia sotto la curva con lo striscione San Rocco">
+<figcaption>Squadra e curva, a fine partita, allo Stadio 8 Settembre.</figcaption>
 </figure>
 </section>
 </div>
 
 <div data-page="sponsor" hidden>
-<section style="background: #F1F4FA; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Sponsor · Frascati Cup</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1; text-transform: uppercase">Grazie a chi crede<br>nel rione</h1>
+<section class="sec">
+<div class="head">
+<p class="kicker">Sponsor · Frascati Cup</p>
+<h1 class="h1">Grazie a chi crede<br>nel rione</h1>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<article style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 24px; display: flex; align-items: center; gap: 20px">
-<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 30px; line-height: 1.1; text-transform: uppercase">Garage San Rocco</h2>
-<div style="font-size: 17px; color: #2B3757">Cocktail bar<br>Piazza San Rocco 7, Frascati</div>
-<p style="margin: 0; font-size: 17px; color: #2B3757">Prima e dopo la partita, ci vediamo al Garage.</p>
-<a href="https://www.instagram.com/garagesanrocco/" style="font-weight: 700; font-size: 17px; padding: 10px 0 2px; overflow-wrap: anywhere">@garagesanrocco</a>
-</div>
-<img src="assets/sp_garage.png" alt="Logo Garage San Rocco" style="flex: 0 0 auto; width: 112px; height: 112px; object-fit: contain; display: block">
-</article>
-<article style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 24px; display: flex; align-items: center; gap: 20px">
-<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 30px; line-height: 1.1; text-transform: uppercase">Pizza San Rocco</h2>
-<div style="font-size: 17px; color: #2B3757">Pizzeria<br>Via Lucrezia della Rovere 1, Frascati</div>
-<p style="margin: 0; font-size: 17px; color: #2B3757">Piccola di formato, grande di gusto.</p>
-<a href="https://www.instagram.com/pizza_sanrocco_frascati/" style="font-weight: 700; font-size: 17px; padding: 10px 0 2px; overflow-wrap: anywhere">@pizza_sanrocco_frascati</a>
-</div>
-<img src="assets/sp_pizza.png" alt="Logo Pizza San Rocco" style="flex: 0 0 auto; width: 112px; height: 112px; object-fit: contain; display: block">
-</article>
-<article style="flex: 1 1 300px; background: #FFFFFF; border: 1px solid #DCE1EC; border-radius: 6px; padding: 24px; display: flex; align-items: center; gap: 20px">
-<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<h2 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: 30px; line-height: 1.1; text-transform: uppercase">Gluck</h2>
-<div style="font-size: 17px; color: #2B3757">Vendita all'ingrosso</div>
-<p style="margin: 0; font-size: 17px; color: #2B3757">Ancora con noi, anche in questa stagione.</p>
-<a href="https://www.instagram.com/glucksrl/" style="font-weight: 700; font-size: 17px; padding: 10px 0 2px; overflow-wrap: anywhere">@glucksrl</a>
-</div>
-<img src="assets/sp_gluck.png" alt="Logo Glück" style="flex: 0 0 auto; width: 112px; height: 112px; object-fit: contain; display: block">
-</article>
-</div>
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; border-top: 1px solid #C9CFDC; padding-top: 28px">
-<p style="margin: 0; font-size: 19px; color: #2B3757; max-width: 600px">Hai un'attività a Frascati e vuoi stare al fianco del rione? Scrivici, ne parliamo volentieri.</p>
-<a href="https://www.instagram.com/rionesanrocco/" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 12px 24px; background: #1D3A7A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none; border-radius: 4px">Scrivici su Instagram</a>
+<ul class="sponsors">
+<li class="sp">
+<img class="sp-logo" src="assets/sp_garage.png" alt="Logo Garage San Rocco">
+<h2 class="h3">Garage San Rocco</h2>
+<p class="sp-kind">Cocktail bar</p>
+<p class="sp-addr"><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg><span>Piazza San Rocco 7, Frascati</span></p>
+<p>Prima e dopo la partita, ci vediamo al Garage.</p>
+<a class="link" href="https://www.instagram.com/garagesanrocco/"><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>@garagesanrocco</span></a>
+</li>
+<li class="sp">
+<img class="sp-logo" src="assets/sp_pizza.png" alt="Logo Pizza San Rocco">
+<h2 class="h3">Pizza San Rocco</h2>
+<p class="sp-kind">Pizzeria</p>
+<p class="sp-addr"><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg><span>Via Lucrezia della Rovere 1, Frascati</span></p>
+<p>Piccola di formato, grande di gusto.</p>
+<a class="link" href="https://www.instagram.com/pizza_sanrocco_frascati/"><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>@pizza_sanrocco_frascati</span></a>
+</li>
+<li class="sp">
+<img class="sp-logo" src="assets/sp_gluck.png" alt="Logo Glück">
+<h2 class="h3">Gluck</h2>
+<p class="sp-kind">Vendita all'ingrosso</p>
+
+<p>Ancora con noi, anche in questa stagione.</p>
+<a class="link" href="https://www.instagram.com/glucksrl/"><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>@glucksrl</span></a>
+</li>
+</ul>
+<div class="cta">
+<p class="lead">Hai un'attività a Frascati e vuoi stare al fianco del rione? Scrivici, ne parliamo volentieri.</p>
+<a class="btn btn--blue" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>Scrivici su Instagram</span></a>
 </div>
 </section>
 </div>
 
 <div data-page="privacy" hidden>
-<section class="sr-doc" style="background: #FFFFFF; padding: 64px clamp(20px, 5vw, 64px) 72px; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
-<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #45506B">Informativa · Note legali</div>
-<h1 style="margin: 0; font-family: 'Anton', 'Impact', sans-serif; font-weight: 400; font-size: clamp(40px, 5.5vw, 72px); line-height: 1; text-transform: uppercase">Privacy e cookie</h1>
+<section class="sec sec--white">
+<div class="head">
+<p class="kicker">Informativa · Note legali</p>
+<h1 class="h1">Privacy e cookie</h1>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
-
-<div style="margin-top: 10px; background: #F1F4FA; border-left: 5px solid #F5B50A; border-radius: 4px; padding: 18px 20px">
-<p style="font-weight: 600; color: #14264F">In breve: questo sito non usa cookie, non fa statistiche sui visitatori, non ha moduli da compilare e non ti chiede nome, email o altri dati. Per questo non compare nessun avviso sui cookie.</p>
-</div>
-
+<div class="doc">
+<div class="brief"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/><path d="M15 19l2 2l4 -4"/></svg><p>In breve: questo sito non usa cookie, non fa statistiche sui visitatori, non ha moduli da compilare e non ti chiede nome, email o altri dati. Per questo non compare nessun avviso sui cookie.</p></div>
 <h2>Chi gestisce il sito</h2>
 <p>Il sito rionesanrocco.github.io è gestito dal Rione San Rocco di Frascati (RM), che è il titolare del trattamento dei dati descritti in questa pagina.</p>
-<p>Per qualsiasi richiesta puoi scriverci in privato su Instagram: <a href="https://www.instagram.com/rionesanrocco/">@rionesanrocco</a>.</p>
+<p>Per qualsiasi richiesta puoi scriverci in privato su Instagram: <a class="link" href="https://www.instagram.com/rionesanrocco/">@rionesanrocco</a>.</p>
 
 <h2>Quali dati vengono trattati</h2>
 <p>Noi non raccogliamo dati su chi visita il sito. L'unico trattamento è tecnico e lo fa il servizio che ospita le pagine:</p>
@@ -621,7 +383,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <li>come ogni server web, a ogni visita GitHub riceve l'indirizzo IP del visitatore e lo registra per ragioni di sicurezza e per far funzionare il servizio;</li>
 <li>noi non abbiamo accesso a questi registri e non li usiamo per riconoscere le persone.</li>
 </ul>
-<p>La base giuridica è il legittimo interesse a rendere il sito raggiungibile e sicuro (art. 6, par. 1, lett. f del Regolamento UE 2016/679). I dati possono essere trasferiti negli Stati Uniti: GitHub dichiara di aderire al Data Privacy Framework UE-USA e di usare le clausole contrattuali standard della Commissione europea. Tempi di conservazione e dettagli sono nell'<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa privacy di GitHub</a>.</p>
+<p>La base giuridica è il legittimo interesse a rendere il sito raggiungibile e sicuro (art. 6, par. 1, lett. f del Regolamento UE 2016/679). I dati possono essere trasferiti negli Stati Uniti: GitHub dichiara di aderire al Data Privacy Framework UE-USA e di usare le clausole contrattuali standard della Commissione europea. Tempi di conservazione e dettagli sono nell'<a class="link" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa privacy di GitHub</a>.</p>
 
 <h2>Cookie</h2>
 <p>Il sito non installa cookie, né propri né di altri, e non usa altri strumenti di tracciamento: niente statistiche, niente pubblicità, niente pulsanti social incorporati. Anche i caratteri tipografici sono caricati dal sito stesso, senza collegamenti a servizi esterni.</p>
@@ -635,7 +397,7 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <p>Se sei in una foto o nell'elenco e vuoi essere tolto, scrivici su Instagram: provvediamo senza chiederti il motivo.</p>
 
 <h2>I tuoi diritti</h2>
-<p>Puoi chiederci in ogni momento di sapere quali dati che ti riguardano trattiamo, di correggerli, cancellarli o limitarne l'uso, e puoi opporti al trattamento (artt. 15-22 del Regolamento UE 2016/679). Se ritieni che i tuoi dati siano trattati in modo scorretto puoi presentare reclamo al <a href="https://www.garanteprivacy.it/" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+<p>Puoi chiederci in ogni momento di sapere quali dati che ti riguardano trattiamo, di correggerli, cancellarli o limitarne l'uso, e puoi opporti al trattamento (artt. 15-22 del Regolamento UE 2016/679). Se ritieni che i tuoi dati siano trattati in modo scorretto puoi presentare reclamo al <a class="link" href="https://www.garanteprivacy.it/" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
 
 <h2>Note legali</h2>
 <ul>
@@ -644,27 +406,23 @@ a{color:#0B1F4B}a:hover{color:#1B3C8A}
 <li>Nomi e loghi degli sponsor appartengono ai rispettivi titolari e sono pubblicati in quanto sponsor della squadra.</li>
 <li>Risultati, date e orari delle partite sono pubblicati a scopo informativo: in caso di differenze valgono le comunicazioni degli organizzatori del torneo.</li>
 </ul>
-
-<p style="margin-top: 14px; font-size: 16px; color: #45506B">Ultimo aggiornamento: 10 ottobre 2026</p>
+<p class="note">Ultimo aggiornamento: 10 ottobre 2026</p>
 </div>
 </section>
 </div>
 
-<footer style="margin-top: auto; background: #E9EDF5; border-top: 1px solid #DCE1EC; color: #1D3A7A; padding: 28px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 40px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<div style="font-family: 'Anton', 'Impact', sans-serif; font-size: 26px; line-height: 1.15; text-transform: uppercase">Non perderti una partita</div>
-<div style="font-size: 15px">Rione San Rocco · Frascati · S.P.Q.T. · Foto della curva: Emanuele Monopoli</div>
-<a class="sr-foot-link" href="#privacy" data-go="privacy">Privacy e cookie</a>
+<footer class="foot">
+<div class="foot-txt">
+<p class="foot-h">Non perderti una partita</p>
+<p>Rione San Rocco · Frascati · S.P.Q.T. · Foto della curva: Emanuele Monopoli</p>
+<a class="link" href="#privacy" data-go="privacy">Privacy e cookie</a>
 </div>
-<a href="https://www.instagram.com/rionesanrocco/" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; box-sizing: border-box; padding: 12px 24px; background: #1D3A7A; color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none; border-radius: 4px">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg>
-<span>Segui @rionesanrocco</span>
-</a>
+<a class="btn btn--blue" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>Segui @rionesanrocco</span></a>
 </footer>
 
 </main>
 </div>
 
-<script src="assets/site.js?v=20261030"></script>
+<script src="assets/site.js?v=20261030b"></script>
 </body>
 </html>
