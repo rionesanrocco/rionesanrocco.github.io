@@ -129,6 +129,33 @@ figcaption{font-size:16px;color:var(--muted);padding-top:var(--s1)}
 .next-info li{display:flex;align-items:center;gap:var(--s1)}
 .next-info .ic{color:var(--gold)}
 
+/* ultima partita e risultati */
+.last{display:flex;flex-direction:column;gap:var(--s2);padding:var(--s4);background:var(--white);border:1px solid var(--line);border-top:4px solid var(--blue)}
+.last--band{padding:var(--s6) var(--gutter);border:0;border-bottom:1px solid var(--line)}
+.last-head{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2)}
+.last-score{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:var(--s3);max-width:768px}
+.last-team{font-family:var(--display);font-weight:400;font-size:clamp(24px,3vw,32px);line-height:1.1;color:var(--ink);text-align:right}
+.last-team--away{text-align:left}
+.last-team .sr-us{font-weight:400;color:var(--blue)}
+.last-num{display:flex;align-items:center;justify-content:center;min-width:128px;height:72px;padding:0 var(--s3);background:var(--blue);color:var(--white);font-family:var(--display);font-size:48px;line-height:1}
+.last-meta,.last-scorers{font-size:16px;color:var(--muted)}
+.last-scorers{color:var(--text)}
+.sr-res{display:inline-flex;align-items:center;height:24px;padding:0 var(--s1);font-weight:600;font-size:14px;line-height:1}
+.sr-res--w{background:var(--blue);color:var(--white)}
+.sr-res--d{background:var(--bg-2);color:var(--ink)}
+.sr-res--l{background:var(--white);color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.sr-win .sr-score{background:var(--blue);border-color:var(--blue);color:var(--white)}
+.sr-draw .sr-score{background:var(--bg-2);color:var(--ink)}
+.sr-loss .sr-score{background:var(--white);border-color:var(--ink);color:var(--ink)}
+.sr-scorers{grid-column:2/-1;font-size:16px;color:var(--text)}
+@media (max-width:599px){
+  .last{padding:var(--s3)}
+  .last--band{padding:var(--s4) var(--gutter)}
+  .last-score{column-gap:var(--s2)}
+  .last-team{font-size:20px}
+  .last-num{min-width:96px;height:56px;padding:0 var(--s2);font-size:32px}
+}
+
 /* divise */
 .kits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,288px),1fr));gap:var(--s3);max-width:1056px}
 .kit{background:var(--white);border:1px solid var(--line)}
@@ -183,6 +210,7 @@ figcaption{font-size:16px;color:var(--muted);padding-top:var(--s1)}
   .sr-mg{grid-area:g;flex-direction:row;align-items:baseline;gap:var(--s1)}
   .sr-mg b{font-size:24px}
   .sr-mwhen{grid-area:w}
+  .sr-scorers{grid-column:1/-1}
   .sr-mteams{grid-area:t;grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr);column-gap:var(--s2);font-size:16px}
   .sr-month{padding:var(--s1) var(--s2)}
 }

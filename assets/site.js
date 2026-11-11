@@ -46,3 +46,22 @@ document.querySelectorAll(".sr-next-d").forEach(function(e){e.textContent=d;});
 document.querySelectorAll(".sr-next-t").forEach(function(e){e.textContent=o;});
 document.querySelectorAll(".sr-next-line").forEach(function(e){e.textContent=d+" · ore "+o+" · Club Le Palme";});
 })();
+(function(){
+var ms=[].slice.call(document.querySelectorAll(".sr-match[data-result]")),boxes=[].slice.call(document.querySelectorAll(".sr-last"));
+if(!boxes.length)return;
+if(!ms.length){boxes.forEach(function(b){b.hidden=true;});return;}
+var m=ms[ms.length-1],r=m.getAttribute("data-result").split("-"),hg=parseInt(r[0],10),ag=parseInt(r[1],10);
+var h=m.getAttribute("data-home"),a=m.getAttribute("data-away"),us="Piazza San Rocco";
+var mine=h===us?hg:ag,theirs=h===us?ag:hg;
+var res=mine>theirs?["Vittoria","w"]:mine<theirs?["Sconfitta","l"]:["Pareggio","d"];
+var sc=m.getAttribute("data-scorers")||"";
+function team(el,name){el.textContent="";if(name===us){var s=document.createElement("span");s.className="sr-us";s.textContent=name;el.appendChild(s);}else{el.textContent=name;}}
+boxes.forEach(function(b){
+b.querySelector(".sr-last-k").textContent="Ultima partita · Giornata "+m.getAttribute("data-g");
+var t=b.querySelector(".sr-last-res");t.textContent=res[0];t.className="sr-res sr-res--"+res[1]+" sr-last-res";
+team(b.querySelector(".sr-last-home"),h);team(b.querySelector(".sr-last-away"),a);
+var n=b.querySelector(".sr-last-num");n.textContent=hg+" \u2013 "+ag;n.setAttribute("aria-label",hg+" a "+ag);
+b.querySelector(".sr-last-meta").textContent=m.getAttribute("data-day")+" · Club Le Palme";
+var p=b.querySelector(".sr-last-scorers");if(sc){p.textContent="Marcatori: "+sc;p.hidden=false;}else{p.hidden=true;}
+});
+})();
