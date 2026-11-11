@@ -34,9 +34,9 @@ var ms=[].slice.call(document.querySelectorAll(".sr-match"));if(!ms.length)retur
 var now=Date.now(),next=null;
 for(var i=0;i<ms.length;i++){if(Date.parse(ms[i].getAttribute("data-when"))+60*60*1000>now){next=ms[i];break;}}
 if(!next){document.querySelectorAll(".sr-next-k").forEach(function(e){e.textContent="Frascati Cup";});
-document.querySelectorAll(".sr-next-h").forEach(function(e){e.textContent="Calendario completato";});
+document.querySelectorAll(".sr-next-h").forEach(function(e){e.textContent="Girone completato";});
 document.querySelectorAll(".sr-next-info").forEach(function(e){e.hidden=true;});
-document.querySelectorAll(".sr-next-line").forEach(function(e){e.textContent="Tutti i risultati nella pagina Partite";});return;}
+document.querySelectorAll(".sr-next-line").forEach(function(e){e.textContent="Ora la fase finale: date nella pagina Partite";});return;}
 next.classList.add("sr-is-next");
 var w=next.querySelector(".sr-mwhen"),t=document.createElement("span");t.className="sr-tag";t.textContent="Prossima";w.appendChild(t);
 var g=next.getAttribute("data-g"),h=next.getAttribute("data-home"),a=next.getAttribute("data-away"),d=next.getAttribute("data-day"),o=next.getAttribute("data-time");

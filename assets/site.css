@@ -261,3 +261,23 @@ figcaption{font-size:16px;color:var(--muted);padding-top:var(--s1)}
   .sp{padding:var(--s3)}
   .lead{font-size:18px}
 }
+
+/* calendario: righe di riposo, pausa e fase finale */
+.sr-cal>li+li{border-top:1px solid var(--line)}
+.sr-rest{display:grid;grid-template-columns:64px 192px minmax(0,1fr);align-items:center;column-gap:var(--s3);padding:var(--s2) var(--s3);background:var(--bg)}
+.sr-rest .sr-mg b{color:var(--muted)}
+.sr-rest .sr-mwhen{color:var(--muted)}
+.sr-rest-t{font-size:18px;color:var(--muted)}
+.sr-pause{padding:var(--s1) var(--s3);background:var(--bg-2);font-size:16px;color:var(--muted)}
+.sr-final{display:grid;grid-template-columns:192px 192px minmax(0,1fr);align-items:center;column-gap:var(--s3);padding:var(--s2) var(--s3);font-size:18px;color:var(--text)}
+.sr-fname{font-weight:600;color:var(--ink)}
+.sr-fwhen{font-weight:600;font-size:16px;color:var(--ink)}
+@media (max-width:699px){
+  .sr-rest{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"g w" "t t";column-gap:var(--s2);row-gap:var(--s1);padding:var(--s2)}
+  .sr-rest .sr-mg{grid-area:g;flex-direction:row;align-items:baseline;gap:var(--s1)}
+  .sr-rest .sr-mg b{font-size:24px}
+  .sr-rest .sr-mwhen{grid-area:w}
+  .sr-rest-t{grid-area:t;font-size:16px}
+  .sr-pause{padding:var(--s1) var(--s2)}
+  .sr-final{grid-template-columns:1fr;row-gap:var(--s1);padding:var(--s2);font-size:16px}
+}
