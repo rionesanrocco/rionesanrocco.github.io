@@ -1,7 +1,15 @@
 (function(){
 var pages=["home","rosa","partite","rione","sponsor","privacy"];
-function show(id,scroll){
+var subs=["calendario","classifica","marcatori","statistiche","fase-finale"];
+function showSub(sub){
+if(subs.indexOf(sub)<0)sub="calendario";
+document.querySelectorAll("[data-panel]").forEach(function(p){p.hidden=p.getAttribute("data-panel")!==sub;});
+document.querySelectorAll(".subtab").forEach(function(t){if(t.getAttribute("data-sub")===sub)t.setAttribute("aria-current","page");else t.removeAttribute("aria-current");});
+}
+function show(full,scroll){
+var parts=(full||"").split("/"),id=parts[0];
 if(pages.indexOf(id)<0)id="home";
+if(id==="partite")showSub(parts[1]);
 document.querySelectorAll("[data-page]").forEach(function(p){p.hidden=p.getAttribute("data-page")!==id;});
 document.querySelectorAll(".sr-tab").forEach(function(t){t.setAttribute("aria-current",t.getAttribute("data-go")===id?"page":"false");});
 if(scroll)window.scrollTo(0,0);
@@ -19,6 +27,8 @@ document.querySelector(".sr-shade").addEventListener("click",function(){menu(fal
 document.addEventListener("keydown",function(e){if(e.key==="Escape"&&root.classList.contains("sr-open"))menu(false,true);});
 window.addEventListener("resize",function(){if(window.innerWidth>=900&&root.classList.contains("sr-open"))menu(false,false);});
 document.addEventListener("click",function(e){
+var st=e.target.closest(".subtab");
+if(st){e.preventDefault();var sub=st.getAttribute("data-sub"),h="#partite/"+sub;if(location.hash!==h)history.pushState(null,"",h);showSub(sub);return;}
 var b=e.target.closest("[data-go]");if(!b)return;
 menu(false,false);
 if(b.tagName==="A")e.preventDefault();

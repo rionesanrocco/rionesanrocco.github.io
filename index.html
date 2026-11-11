@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#1D3A7A">
 <link rel="icon" href="assets/logo.png">
-<link rel="stylesheet" href="assets/site.css?v=20261111d">
+<link rel="stylesheet" href="assets/site.css?v=20261111e">
 </head>
 <body>
 <div class="sr-root">
@@ -189,6 +189,14 @@
 <h1 class="h1">Partite</h1>
 <p class="lead">D'inverno si gioca a calciotto: otto contro otto, campo più stretto, ritmo più alto. In campo scendiamo come Piazza San Rocco.</p>
 </div>
+<nav class="subtabs" aria-label="Sezioni della pagina Partite">
+<a class="subtab" href="#partite/calendario" data-sub="calendario" aria-current="page">Calendario</a>
+<a class="subtab" href="#partite/classifica" data-sub="classifica">Classifica</a>
+<a class="subtab" href="#partite/marcatori" data-sub="marcatori">Marcatori</a>
+<a class="subtab" href="#partite/statistiche" data-sub="statistiche">Statistiche</a>
+<a class="subtab" href="#partite/fase-finale" data-sub="fase-finale">Fase finale</a>
+</nav>
+<div class="subpanel" data-panel="calendario">
 <div class="last sr-last">
 <div class="last-head"><p class="kicker sr-last-k">Ultima partita · Giornata 1</p><span class="sr-res sr-res--w sr-last-res">Vittoria</span></div>
 <p class="last-score"><span class="last-team sr-last-home"><span class="sr-us">Piazza San Rocco</span></span><span class="last-num sr-last-num" aria-label="8 a 1">8 – 1</span><span class="last-team last-team--away sr-last-away">Piazza Garibaldi</span></p>
@@ -205,65 +213,6 @@
 <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg><span>Club Le Palme</span></li>
 </ul>
 </div>
-</div>
-<div class="group">
-<h2 class="h2">Classifica</h2>
-<p class="note">Dopo la 1ª giornata. Fonte: Tournyo, l'app ufficiale del torneo.</p>
-<div class="tb-wrap">
-<table class="tb">
-<thead><tr><th scope="col" class="tb-pos">#</th><th scope="col" class="tb-team">Squadra</th><th scope="col" title="Giocate">G</th><th scope="col" title="Vinte">V</th><th scope="col" class="tb-np" title="Pareggiate">N</th><th scope="col" class="tb-np" title="Perse">P</th><th scope="col" class="tb-gol" title="Gol fatti e subiti">Gol</th><th scope="col" class="tb-pt">Punti</th></tr></thead>
-<tbody>
-<tr class="tb-final tb-us"><td class="tb-pos">1</td><th scope="row" class="tb-team">Piazza San Rocco</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">8:1</td><td class="tb-pt">3</td></tr>
-<tr class="tb-po"><td class="tb-pos">2</td><th scope="row" class="tb-team">Piazza Enrico Fermi</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">4:1</td><td class="tb-pt">3</td></tr>
-<tr class="tb-po"><td class="tb-pos">3</td><th scope="row" class="tb-team">Vialoni</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">4:2</td><td class="tb-pt">3</td></tr>
-<tr class="tb-po"><td class="tb-pos">4</td><th scope="row" class="tb-team">Ombrellino</th><td>0</td><td>0</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">0:0</td><td class="tb-pt">0</td></tr>
-<tr class="tb-po"><td class="tb-pos">5</td><th scope="row" class="tb-team">Piazza del Mercato</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">2:4</td><td class="tb-pt">0</td></tr>
-<tr class="tb-out"><td class="tb-pos">6</td><th scope="row" class="tb-team">Piazza Bambocci</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">1:4</td><td class="tb-pt">0</td></tr>
-<tr class="tb-out"><td class="tb-pos">7</td><th scope="row" class="tb-team">Piazza Garibaldi</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">1:8</td><td class="tb-pt">0</td></tr>
-</tbody>
-</table>
-</div>
-<ul class="tb-legend">
-<li><span class="tb-key tb-key--final" aria-hidden="true"></span>1ª: direttamente in finale</li>
-<li><span class="tb-key tb-key--po" aria-hidden="true"></span>Dalla 2ª alla 5ª: play-off</li>
-</ul>
-</div>
-<div class="group">
-<h2 class="h2">Marcatori del torneo · top 10</h2>
-<p class="note">Fonte: Tournyo. A parità di gol vale l'ordine dell'app.</p>
-<ol class="scorers">
-<li class="sc sc--us"><span class="sc-n">1</span><span class="sc-name"><span class="pl-l">Valerio Pronkina</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">3</span></li>
-<li class="sc sc--us"><span class="sc-n">2</span><span class="sc-name"><span class="pl-l">Manuel Muzi</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">2</span></li>
-<li class="sc"><span class="sc-n">3</span><span class="sc-name"><span class="pl-l">Andrea Lazzarini</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">2</span></li>
-<li class="sc"><span class="sc-n">4</span><span class="sc-name"><span class="pl-l">Andrea Froio</span><span class="pl-f">Piazza del Mercato</span></span><span class="sc-g">2</span></li>
-<li class="sc"><span class="sc-n">5</span><span class="sc-name"><span class="pl-l">Lorenzo Matano</span><span class="pl-f">Vialoni</span></span><span class="sc-g">2</span></li>
-<li class="sc sc--us"><span class="sc-n">6</span><span class="sc-name"><span class="pl-l">Lorenzo Del Monte</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">7</span><span class="sc-name"><span class="pl-l">Simone Lazzarini</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">8</span><span class="sc-name"><span class="pl-l">Fabio Di Domenico</span><span class="pl-f">Piazza Garibaldi</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">9</span><span class="sc-name"><span class="pl-l">Claudio Consorti</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">10</span><span class="sc-name"><span class="pl-l">Andrea Leon Cicero</span><span class="pl-f">Vialoni</span></span><span class="sc-g">1</span></li>
-</ol>
-</div>
-<div class="group sr-stats">
-<h2 class="h2">Statistiche del San Rocco</h2>
-<p class="note">La stagione di Piazza San Rocco nella Frascati Cup, aggiornata dopo ogni partita.</p>
-<ul class="stats">
-<li><span class="st-n" data-stat="giocate">1</span><span class="st-l">Giocate</span></li>
-<li><span class="st-n" data-stat="vinte">1</span><span class="st-l">Vinte</span></li>
-<li><span class="st-n" data-stat="pari">0</span><span class="st-l">Pareggiate</span></li>
-<li><span class="st-n" data-stat="perse">0</span><span class="st-l">Perse</span></li>
-<li><span class="st-n" data-stat="gf">8</span><span class="st-l">Gol fatti</span></li>
-<li><span class="st-n" data-stat="gs">1</span><span class="st-l">Gol subiti</span></li>
-<li><span class="st-n" data-stat="punti">3</span><span class="st-l">Punti</span></li>
-</ul>
-<h3 class="h3">Marcatori del San Rocco</h3>
-<ol class="scorers sr-scorer-list">
-<li class="sc"><span class="sc-n">27</span><span class="sc-name"><span class="pl-f">Valerio</span><span class="pl-l">Pronkina</span></span><span class="sc-g">3</span></li>
-<li class="sc"><span class="sc-n">9</span><span class="sc-name"><span class="pl-f">Manuel</span><span class="pl-l">Muzi</span></span><span class="sc-g">2</span></li>
-<li class="sc"><span class="sc-n">18</span><span class="sc-name"><span class="pl-f">Federico</span><span class="pl-l">Ronga</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">8</span><span class="sc-name"><span class="pl-f">Mattia</span><span class="pl-l">Guerrini</span></span><span class="sc-g">1</span></li>
-<li class="sc"><span class="sc-n">23</span><span class="sc-name"><span class="pl-f">Lorenzo</span><span class="pl-l">Del Monte</span></span><span class="sc-g">1</span></li>
-</ol>
 </div>
 <div class="group">
 <h2 class="h2">Calendario · 14 giornate</h2>
@@ -348,6 +297,81 @@
 </ol>
 <p class="note">Calendario ufficiale della Frascati Cup, versione aggiornata dagli organizzatori: 7 squadre, girone all'italiana con andata e ritorno, tutte le partite alle 21:00. Il risultato compare qui dopo ogni partita. In caso di cambi di data o orario valgono le comunicazioni degli organizzatori.</p>
 </div>
+<div class="venue">
+<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg>
+<div class="venue-txt">
+<h2 class="h3">Dove giochiamo d'inverno</h2>
+<p><span class="strong">Club Le Palme</span><br>Via Casilina 1940/C, 00132 Roma</p>
+<a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Club+Le+Palme+Via+Casilina+1940+Roma">Apri su Google Maps<svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg></a>
+</div>
+</div>
+</div>
+<div class="subpanel" data-panel="classifica" hidden>
+<div class="group">
+<h2 class="h2">Classifica</h2>
+<p class="note">Dopo la 1ª giornata. Fonte: Tournyo, l'app ufficiale del torneo.</p>
+<div class="tb-wrap">
+<table class="tb">
+<thead><tr><th scope="col" class="tb-pos">#</th><th scope="col" class="tb-team">Squadra</th><th scope="col" title="Giocate">G</th><th scope="col" title="Vinte">V</th><th scope="col" class="tb-np" title="Pareggiate">N</th><th scope="col" class="tb-np" title="Perse">P</th><th scope="col" class="tb-gol" title="Gol fatti e subiti">Gol</th><th scope="col" class="tb-pt">Punti</th></tr></thead>
+<tbody>
+<tr class="tb-final tb-us"><td class="tb-pos">1</td><th scope="row" class="tb-team">Piazza San Rocco</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">8:1</td><td class="tb-pt">3</td></tr>
+<tr class="tb-po"><td class="tb-pos">2</td><th scope="row" class="tb-team">Piazza Enrico Fermi</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">4:1</td><td class="tb-pt">3</td></tr>
+<tr class="tb-po"><td class="tb-pos">3</td><th scope="row" class="tb-team">Vialoni</th><td>1</td><td>1</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">4:2</td><td class="tb-pt">3</td></tr>
+<tr class="tb-po"><td class="tb-pos">4</td><th scope="row" class="tb-team">Ombrellino</th><td>0</td><td>0</td><td class="tb-np">0</td><td class="tb-np">0</td><td class="tb-gol">0:0</td><td class="tb-pt">0</td></tr>
+<tr class="tb-po"><td class="tb-pos">5</td><th scope="row" class="tb-team">Piazza del Mercato</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">2:4</td><td class="tb-pt">0</td></tr>
+<tr class="tb-out"><td class="tb-pos">6</td><th scope="row" class="tb-team">Piazza Bambocci</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">1:4</td><td class="tb-pt">0</td></tr>
+<tr class="tb-out"><td class="tb-pos">7</td><th scope="row" class="tb-team">Piazza Garibaldi</th><td>1</td><td>0</td><td class="tb-np">0</td><td class="tb-np">1</td><td class="tb-gol">1:8</td><td class="tb-pt">0</td></tr>
+</tbody>
+</table>
+</div>
+<ul class="tb-legend">
+<li><span class="tb-key tb-key--final" aria-hidden="true"></span>1ª: direttamente in finale</li>
+<li><span class="tb-key tb-key--po" aria-hidden="true"></span>Dalla 2ª alla 5ª: play-off</li>
+</ul>
+</div>
+</div>
+<div class="subpanel" data-panel="marcatori" hidden>
+<div class="group">
+<h2 class="h2">Marcatori del torneo · top 10</h2>
+<p class="note">Fonte: Tournyo. A parità di gol vale l'ordine dell'app.</p>
+<ol class="scorers">
+<li class="sc sc--us"><span class="sc-n">1</span><span class="sc-name"><span class="pl-l">Valerio Pronkina</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">3</span></li>
+<li class="sc sc--us"><span class="sc-n">2</span><span class="sc-name"><span class="pl-l">Manuel Muzi</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">2</span></li>
+<li class="sc"><span class="sc-n">3</span><span class="sc-name"><span class="pl-l">Andrea Lazzarini</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">2</span></li>
+<li class="sc"><span class="sc-n">4</span><span class="sc-name"><span class="pl-l">Andrea Froio</span><span class="pl-f">Piazza del Mercato</span></span><span class="sc-g">2</span></li>
+<li class="sc"><span class="sc-n">5</span><span class="sc-name"><span class="pl-l">Lorenzo Matano</span><span class="pl-f">Vialoni</span></span><span class="sc-g">2</span></li>
+<li class="sc sc--us"><span class="sc-n">6</span><span class="sc-name"><span class="pl-l">Lorenzo Del Monte</span><span class="pl-f">Piazza San Rocco</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">7</span><span class="sc-name"><span class="pl-l">Simone Lazzarini</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">8</span><span class="sc-name"><span class="pl-l">Fabio Di Domenico</span><span class="pl-f">Piazza Garibaldi</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">9</span><span class="sc-name"><span class="pl-l">Claudio Consorti</span><span class="pl-f">Piazza Enrico Fermi</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">10</span><span class="sc-name"><span class="pl-l">Andrea Leon Cicero</span><span class="pl-f">Vialoni</span></span><span class="sc-g">1</span></li>
+</ol>
+</div>
+</div>
+<div class="subpanel" data-panel="statistiche" hidden>
+<div class="group sr-stats">
+<h2 class="h2">Statistiche del San Rocco</h2>
+<p class="note">La stagione di Piazza San Rocco nella Frascati Cup, aggiornata dopo ogni partita.</p>
+<ul class="stats">
+<li><span class="st-n" data-stat="giocate">1</span><span class="st-l">Giocate</span></li>
+<li><span class="st-n" data-stat="vinte">1</span><span class="st-l">Vinte</span></li>
+<li><span class="st-n" data-stat="pari">0</span><span class="st-l">Pareggiate</span></li>
+<li><span class="st-n" data-stat="perse">0</span><span class="st-l">Perse</span></li>
+<li><span class="st-n" data-stat="gf">8</span><span class="st-l">Gol fatti</span></li>
+<li><span class="st-n" data-stat="gs">1</span><span class="st-l">Gol subiti</span></li>
+<li><span class="st-n" data-stat="punti">3</span><span class="st-l">Punti</span></li>
+</ul>
+<h3 class="h3">Marcatori del San Rocco</h3>
+<ol class="scorers sr-scorer-list">
+<li class="sc"><span class="sc-n">27</span><span class="sc-name"><span class="pl-f">Valerio</span><span class="pl-l">Pronkina</span></span><span class="sc-g">3</span></li>
+<li class="sc"><span class="sc-n">9</span><span class="sc-name"><span class="pl-f">Manuel</span><span class="pl-l">Muzi</span></span><span class="sc-g">2</span></li>
+<li class="sc"><span class="sc-n">18</span><span class="sc-name"><span class="pl-f">Federico</span><span class="pl-l">Ronga</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">8</span><span class="sc-name"><span class="pl-f">Mattia</span><span class="pl-l">Guerrini</span></span><span class="sc-g">1</span></li>
+<li class="sc"><span class="sc-n">23</span><span class="sc-name"><span class="pl-f">Lorenzo</span><span class="pl-l">Del Monte</span></span><span class="sc-g">1</span></li>
+</ol>
+</div>
+</div>
+<div class="subpanel" data-panel="fase-finale" hidden>
 <div class="group">
 <h2 class="h2">Fase finale</h2>
 <p class="note">Vittoria 3 punti, pareggio 1, sconfitta 0. La prima classificata va direttamente in finale; dalla seconda alla quinta si giocano i play-off in gara secca; sesta e settima sono eliminate.</p>
@@ -357,13 +381,6 @@
 <li class="sr-final"><span class="sr-fname">Finale play-off</span><span class="sr-fwhen">Lunedì 15 marzo · 21:00</span><span class="sr-fteams">Vincitrice semifinale 1 – Vincitrice semifinale 2</span></li>
 <li class="sr-final"><span class="sr-fname">Finale Frascati Cup</span><span class="sr-fwhen">Giovedì 18 marzo · 21:00</span><span class="sr-fteams">1ª classificata – Vincitrice play-off</span></li>
 </ol>
-</div>
-<div class="venue">
-<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"/></svg>
-<div class="venue-txt">
-<h2 class="h3">Dove giochiamo d'inverno</h2>
-<p><span class="strong">Club Le Palme</span><br>Via Casilina 1940/C, 00132 Roma</p>
-<a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Club+Le+Palme+Via+Casilina+1940+Roma">Apri su Google Maps<svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg></a>
 </div>
 </div>
 </section>
@@ -507,6 +524,6 @@
 </main>
 </div>
 
-<script src="assets/site.js?v=20261111c"></script>
+<script src="assets/site.js?v=20261111e"></script>
 </body>
 </html>
