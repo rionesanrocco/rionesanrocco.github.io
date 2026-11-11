@@ -65,3 +65,29 @@ b.querySelector(".sr-last-meta").textContent=m.getAttribute("data-day")+" · Clu
 var p=b.querySelector(".sr-last-scorers");if(sc){p.textContent="Marcatori: "+sc;p.hidden=false;}else{p.hidden=true;}
 });
 })();
+(function(){
+var box=document.querySelector(".sr-stats");if(!box)return;
+var us="Piazza San Rocco",ms=[].slice.call(document.querySelectorAll(".sr-match[data-result]"));
+var st={giocate:0,vinte:0,pari:0,perse:0,gf:0,gs:0,punti:0},goals={};
+ms.forEach(function(m){
+var r=m.getAttribute("data-result").split("-"),h=parseInt(r[0],10),a=parseInt(r[1],10),home=m.getAttribute("data-home")===us;
+var f=home?h:a,s=home?a:h;st.giocate++;st.gf+=f;st.gs+=s;
+if(f>s){st.vinte++;st.punti+=3;}else if(f===s){st.pari++;st.punti+=1;}else{st.perse++;}
+(m.getAttribute("data-scorers")||"").split(/,\s*(?![^()]*\))/).forEach(function(x){
+x=x.trim();if(!x)return;var p=x.match(/^(.+?)(?:\s+(\d+))?\s*(?:\(.*\))?$/);if(!p)return;
+var k=p[1].trim();goals[k]=(goals[k]||0)+(p[2]?parseInt(p[2],10):1);});
+});
+Object.keys(st).forEach(function(k){var e=box.querySelector('[data-stat="'+k+'"]');if(e)e.textContent=st[k];});
+var roster=[].slice.call(document.querySelectorAll(".roster .pl")).map(function(p){return{n:p.querySelector(".pl-n").textContent,f:p.querySelector(".pl-f").textContent,l:p.querySelector(".pl-l").textContent};});
+function find(k){var m=k.match(/^([A-Z])\.\s+(.+)$/),last=m?m[2]:k,ini=m?m[1]:null;
+var c=roster.filter(function(r){return r.l===last&&(!ini||r.f.charAt(0)===ini);});return c.length===1?c[0]:{n:"",f:"",l:k};}
+var list=box.querySelector(".sr-scorer-list"),rows=Object.keys(goals).map(function(k){var p=find(k);p.g=goals[k];return p;});
+rows.sort(function(a,b){return b.g-a.g||a.l.localeCompare(b.l,"it");});
+list.textContent="";
+rows.forEach(function(r){var li=document.createElement("li");li.className="sc";
+var n=document.createElement("span");n.className="sc-n";n.textContent=r.n;
+var nm=document.createElement("span");nm.className="sc-name";var a=document.createElement("span");a.className="pl-f";a.textContent=r.f;var b=document.createElement("span");b.className="pl-l";b.textContent=r.l;nm.appendChild(a);nm.appendChild(b);
+var g=document.createElement("span");g.className="sc-g";g.textContent=r.g;g.setAttribute("aria-label",r.g+" gol");
+li.appendChild(n);li.appendChild(nm);li.appendChild(g);list.appendChild(li);});
+box.hidden=false;
+})();
