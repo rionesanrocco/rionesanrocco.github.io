@@ -1,9 +1,8 @@
 /* Rione San Rocco — foglio di stile unico. Tema "matchday scuro" (23/11/2026).
    Regole: spaziature solo dalla scala --s (8, 16, 24, 32, 48, 64); nessun angolo arrotondato;
    niente maiuscolo; due pesi al massimo per carattere: Barlow 400/600, Oswald 400/600,
-   Anton 400, UnifrakturCook 700. Icone: Tabler Icons (outline). */
+   UnifrakturCook 700. Titoli in Barlow 600, numeri in Oswald 400 (Anton tolto il 23/11). Icone: Tabler Icons (outline). */
 
-@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/anton-latin-400-normal.woff2) format('woff2')}
 @font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/barlow-latin-400-normal.woff2) format('woff2')}
 @font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-latin-600-normal.woff2) format('woff2')}
 @font-face{font-family:'Oswald';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/oswald-latin-400-normal.woff2) format('woff2')}
@@ -22,7 +21,8 @@
   --blue:#1D3A7A;--blue-dark:#12244C;--blue-light:#41598F;--navy:#0B1F4B;
   --gold:#F5B50A;--gold-hover:#FFC63A;--gold-soft:#1C3270;
   --grad-h:linear-gradient(90deg,var(--blue-dark) 0%,var(--blue) 55%,var(--blue-light) 100%);
-  --display:'Anton','Impact',sans-serif;
+  --display:'Oswald','Barlow',sans-serif; /* numeri */
+  --head:'Barlow','Helvetica Neue',Arial,sans-serif; /* titoli */
   --body:'Barlow','Helvetica Neue',Arial,sans-serif;
   --ui:'Oswald','Barlow',sans-serif;
   --gothic:'UnifrakturCook',serif;
@@ -346,4 +346,35 @@ figcaption{font-size:16px;color:var(--muted);padding-top:var(--s1)}
   .sp{padding:var(--s3)}
   .cta{padding:var(--s3)}
   .lead{font-size:18px}
+}
+
+/* tipografia sobria (23/11): titoli in Barlow 600 di misura contenuta, numeri in Oswald 400 */
+.h1,.h2,.h3,.hero-h,.next-h,.last-team,.staff-n,.doc h2,.foot-h{font-family:var(--head);font-weight:600;letter-spacing:0}
+.h1{font-size:clamp(32px,4vw,48px);line-height:1.15}
+.h2{font-size:28px;line-height:1.25}
+.h3{font-size:20px;line-height:1.3}
+.hero-h{font-size:clamp(40px,5.5vw,64px);line-height:1.1}
+.hero-gothic{font-size:clamp(24px,3vw,32px)}
+.next-h{font-size:clamp(24px,3vw,32px);line-height:1.2}
+.last-team{font-size:clamp(18px,2.2vw,24px);line-height:1.2}
+.last-team .sr-us{font-weight:600}
+.staff-n{font-size:24px;line-height:1.25}
+.doc h2{font-size:20px;line-height:1.3}
+.foot-h{font-size:18px;line-height:1.3}
+.last-num{min-width:112px;height:64px;font-size:40px;font-weight:400}
+.st-n{font-size:40px;font-weight:400}
+.pl-n,.sc-n{font-size:20px;font-weight:400}
+.sc-g{font-size:18px;font-weight:400}
+.tl-y{font-size:32px;font-weight:400}
+.tb .tb-pos,.tb .tb-pt{font-size:18px;font-weight:400}
+.sr-mg b{font-size:24px;font-weight:400}
+.sr-score{font-size:18px;font-weight:400}
+.cap-c{font-size:14px;font-weight:600}
+@media (max-width:599px){
+  .h1{font-size:32px}
+  .hero-h{font-size:40px}
+  .last-team{font-size:16px}
+  .last-num{min-width:88px;height:48px;font-size:28px}
+  .st-n{font-size:32px}
+  .sr-mg b{font-size:20px}
 }
