@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="theme-color" content="#050D1F">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Rione San Rocco – Frascati</title>
 <meta name="description" content="Il rione gialloblù di Frascati: rosa, partite della Frascati Cup, storia e sponsor del Rione San Rocco.">
@@ -14,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#1D3A7A">
 <link rel="icon" href="assets/logo.png">
-<link rel="stylesheet" href="assets/site.css?v=20261111e">
+<link rel="stylesheet" href="assets/site.css?v=20261123">
 </head>
 <body>
 <div class="sr-root">
@@ -136,12 +137,15 @@
 </div>
 
 <div data-page="rosa" hidden>
-<section class="sec">
+<header class="pagehead">
+<nav class="crumbs" aria-label="Percorso"><button type="button" data-go="home">Home</button><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg><span aria-current="page">Rosa</span></nav>
 <div class="head">
 <p class="kicker">Frascati Cup · stagione 2026/27 · calciotto a 8</p>
 <h1 class="h1">La rosa</h1>
 <p class="lead">I venti giocatori e lo staff di Piazza San Rocco per la Frascati Cup, il torneo invernale di calciotto, da ottobre a marzo.</p>
 </div>
+</header>
+<section class="sec">
 <div class="group">
 <h2 class="h2">Staff tecnico</h2>
 <ul class="staff">
@@ -152,12 +156,14 @@
 <div class="group">
 <h2 class="h2">Portiere</h2>
 <ul class="roster">
+<li class="row-head" aria-hidden="true"><span>N.</span><span>Giocatore</span></li>
 <li class="pl"><span class="pl-n" aria-label="Numero 1">1</span><span class="pl-name"><span class="pl-f">Mattia</span><span class="pl-l">Paolizzi</span></span></li>
 </ul>
 </div>
 <div class="group">
 <h2 class="h2">Giocatori</h2>
 <ul class="roster">
+<li class="row-head" aria-hidden="true"><span>N.</span><span>Giocatore</span></li>
 <li class="pl"><span class="pl-n" aria-label="Numero 4">4</span><span class="pl-name"><span class="pl-f">Francesco</span><span class="pl-l">Massacci</span></span></li>
 <li class="pl"><span class="pl-n" aria-label="Numero 5">5</span><span class="pl-name"><span class="pl-f">Christian</span><span class="pl-l">Muzi</span></span></li>
 <li class="pl"><span class="pl-n" aria-label="Numero 6">6</span><span class="pl-name"><span class="pl-f">Gianluca</span><span class="pl-l">Basili</span></span></li>
@@ -183,12 +189,15 @@
 </div>
 
 <div data-page="partite" hidden>
-<section class="sec">
+<header class="pagehead">
+<nav class="crumbs" aria-label="Percorso"><button type="button" data-go="home">Home</button><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg><span aria-current="page">Partite</span></nav>
 <div class="head">
 <p class="kicker">Frascati Cup · torneo invernale · calciotto a 8</p>
 <h1 class="h1">Partite</h1>
 <p class="lead">D'inverno si gioca a calciotto: otto contro otto, campo più stretto, ritmo più alto. In campo scendiamo come Piazza San Rocco.</p>
 </div>
+</header>
+<section class="sec">
 <nav class="subtabs" aria-label="Sezioni della pagina Partite">
 <a class="subtab" href="#partite/calendario" data-sub="calendario" aria-current="page">Calendario</a>
 <a class="subtab" href="#partite/classifica" data-sub="classifica">Classifica</a>
@@ -382,12 +391,15 @@
 </div>
 
 <div data-page="rione" hidden>
-<section class="sec">
+<header class="pagehead">
+<nav class="crumbs" aria-label="Percorso"><button type="button" data-go="home">Home</button><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg><span aria-current="page">Il rione</span></nav>
 <div class="head">
 <p class="kicker">La nostra storia</p>
 <h1 class="h1">Una piazza,<br>una squadra</h1>
 <p class="lead">Dieci rioni, uno stadio, un mese di partite all'8 Settembre. Il San Rocco c'è dalla prima edizione, con la sua gente sempre dietro la rete.</p>
 </div>
+</header>
+<section class="sec">
 <ol class="timeline">
 <li class="tl tl--gold">
 <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21l8 0"/><path d="M12 17l0 4"/><path d="M7 4l10 0"/><path d="M17 4v8a5 5 0 0 1 -10 0v-8"/><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/></svg>
@@ -422,11 +434,14 @@
 </div>
 
 <div data-page="sponsor" hidden>
-<section class="sec">
+<header class="pagehead">
+<nav class="crumbs" aria-label="Percorso"><button type="button" data-go="home">Home</button><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg><span aria-current="page">Sponsor</span></nav>
 <div class="head">
 <p class="kicker">Sponsor · Frascati Cup</p>
 <h1 class="h1">Grazie a chi crede<br>nel rione</h1>
 </div>
+</header>
+<section class="sec">
 <ul class="sponsors">
 <li class="sp">
 <img class="sp-logo" src="assets/sp_garage.png" alt="Logo Garage San Rocco">
@@ -461,11 +476,14 @@
 </div>
 
 <div data-page="privacy" hidden>
-<section class="sec sec--white">
+<header class="pagehead">
+<nav class="crumbs" aria-label="Percorso"><button type="button" data-go="home">Home</button><svg class="ic ic-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg><span aria-current="page">Privacy e cookie</span></nav>
 <div class="head">
 <p class="kicker">Informativa · Note legali</p>
 <h1 class="h1">Privacy e cookie</h1>
 </div>
+</header>
+<section class="sec sec--white">
 <div class="doc">
 <div class="brief"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/><path d="M15 19l2 2l4 -4"/></svg><p>In breve: questo sito non usa cookie, non fa statistiche sui visitatori, non ha moduli da compilare e non ti chiede nome, email o altri dati. Per questo non compare nessun avviso sui cookie.</p></div>
 <h2>Chi gestisce il sito</h2>
@@ -508,17 +526,24 @@
 </div>
 
 <footer class="foot">
-<div class="foot-txt">
-<p class="foot-h">Non perderti una partita</p>
-<p>Rione San Rocco · Frascati · S.P.Q.T. · Foto della curva: Emanuele Monopoli</p>
+<div class="foot-col">
+<p class="foot-h">Rione San Rocco</p>
+<p>Frascati · S.P.Q.T.</p>
+<p>Foto della curva: Emanuele Monopoli</p>
+</div>
+<div class="foot-col">
+<p class="foot-h">Note legali</p>
 <a class="link" href="#privacy" data-go="privacy">Privacy e cookie</a>
 </div>
-<a class="btn btn--blue" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>Segui @rionesanrocco</span></a>
+<div class="foot-col">
+<p class="foot-h">Seguici</p>
+<a class="btn btn--gold" href="https://www.instagram.com/rionesanrocco/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"/><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"/><path d="M17 7v.01"/></svg><span>@rionesanrocco</span></a>
+</div>
 </footer>
 
 </main>
 </div>
 
-<script src="assets/site.js?v=20261111e"></script>
+<script src="assets/site.js?v=20261123"></script>
 </body>
 </html>

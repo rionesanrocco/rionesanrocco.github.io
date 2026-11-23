@@ -25,7 +25,7 @@ burger.addEventListener("click",function(){menu(true,true);});
 closer.addEventListener("click",function(){menu(false,true);});
 document.querySelector(".sr-shade").addEventListener("click",function(){menu(false,false);});
 document.addEventListener("keydown",function(e){if(e.key==="Escape"&&root.classList.contains("sr-open"))menu(false,true);});
-window.addEventListener("resize",function(){if(window.innerWidth>=900&&root.classList.contains("sr-open"))menu(false,false);});
+window.addEventListener("resize",function(){if(window.innerWidth>=1024&&root.classList.contains("sr-open"))menu(false,false);});
 document.addEventListener("click",function(e){
 var st=e.target.closest(".subtab");
 if(st){e.preventDefault();var sub=st.getAttribute("data-sub"),h="#partite/"+sub;if(location.hash!==h)history.pushState(null,"",h);showSub(sub);return;}
